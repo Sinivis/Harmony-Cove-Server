@@ -14296,5 +14296,17 @@
     },
     "done": true
   },
+  "comforts:rope_and_nail": {
+    "criteria": {
+      "has_iron": "2026-04-05 15:52:57 -0600"
+    },
+    "done": true
+  },
+  "aquaculture:recipes/aquaculture/tackle_box": {
+    "criteria": {
+      "has_items": "2026-04-09 21:57:29 -0600"
+    },
+    "done": true
+  },
   "DataVersion": 3465
 }
