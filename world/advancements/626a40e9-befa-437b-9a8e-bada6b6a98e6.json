@@ -782,6 +782,7 @@
       "minecraft:creeper": "2024-06-16 23:26:50 -0600",
       "minecraft:phantom": "2025-09-27 08:53:24 -0600",
       "minecraft:wither_skeleton": "2024-06-24 00:50:42 -0600",
+      "minecraft:cave_spider": "2026-04-09 23:07:03 -0600",
       "minecraft:piglin": "2025-09-27 08:51:14 -0600",
       "minecraft:stray": "2024-07-11 05:38:53 -0600",
       "minecraft:enderman": "2025-07-29 21:07:11 -0600",
@@ -12678,33 +12679,9 @@
     },
     "done": true
   },
-  "aether:recipes/combat/golden_helmet_repairing": {
+  "aether:recipes/combat/leather_leggings_repairing": {
     "criteria": {
-      "has_golden_helmet": "2026-04-09 21:33:24 -0600"
-    },
-    "done": true
-  },
-  "aether:recipes/combat/iron_leggings_repairing": {
-    "criteria": {
-      "has_iron_leggings": "2026-04-09 21:33:37 -0600"
-    },
-    "done": true
-  },
-  "aether:recipes/combat/iron_boots_repairing": {
-    "criteria": {
-      "has_iron_boots": "2026-04-09 21:30:20 -0600"
-    },
-    "done": true
-  },
-  "aether:recipes/combat/leather_boots_repairing": {
-    "criteria": {
-      "has_leather_boots": "2026-04-09 21:25:30 -0600"
-    },
-    "done": true
-  },
-  "aether:recipes/combat/golden_leggings_repairing": {
-    "criteria": {
-      "has_golden_leggings": "2026-04-09 21:33:28 -0600"
+      "has_leather_leggings": "2026-04-09 21:20:11 -0600"
     },
     "done": true
   },
@@ -12714,21 +12691,232 @@
     },
     "done": true
   },
-  "cfm:recipes/decorations/dark_oak_hedge": {
+  "aether:recipes/combat/leather_boots_repairing": {
     "criteria": {
-      "has_leaves": "2026-04-09 21:41:49 -0600"
+      "has_leather_boots": "2026-04-09 21:25:30 -0600"
     },
     "done": true
   },
-  "aether:recipes/combat/leather_leggings_repairing": {
+  "aether:recipes/combat/iron_boots_repairing": {
     "criteria": {
-      "has_leather_leggings": "2026-04-09 21:20:11 -0600"
+      "has_iron_boots": "2026-04-09 21:30:20 -0600"
+    },
+    "done": true
+  },
+  "aether:recipes/combat/golden_helmet_repairing": {
+    "criteria": {
+      "has_golden_helmet": "2026-04-09 21:33:24 -0600"
+    },
+    "done": true
+  },
+  "aether:recipes/combat/golden_leggings_repairing": {
+    "criteria": {
+      "has_golden_leggings": "2026-04-09 21:33:28 -0600"
+    },
+    "done": true
+  },
+  "aether:recipes/combat/iron_leggings_repairing": {
+    "criteria": {
+      "has_iron_leggings": "2026-04-09 21:33:37 -0600"
     },
     "done": true
   },
   "aether:recipes/combat/leather_chestplate_repairing": {
     "criteria": {
       "has_leather_chestplate": "2026-04-09 21:33:37 -0600"
+    },
+    "done": true
+  },
+  "cfm:recipes/decorations/dark_oak_hedge": {
+    "criteria": {
+      "has_leaves": "2026-04-09 21:41:49 -0600"
+    },
+    "done": true
+  },
+  "minecraft:end/elytra": {
+    "criteria": {
+      "elytra": "2026-04-09 22:10:49 -0600"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/wheat_dough_from_egg": {
+    "criteria": {
+      "has_wheat": "2026-04-09 22:22:09 -0600"
+    },
+    "done": true
+  },
+  "twilightforest:progress_lich": {
+    "criteria": {
+      "kill_naga": "2026-04-09 22:32:28 -0600",
+      "was_in_fight": "2026-04-09 22:47:10 -0600"
+    },
+    "done": true
+  },
+  "twilightforest:progress_naga": {
+    "criteria": {
+      "scale": "2026-04-09 22:32:28 -0600"
+    },
+    "done": true
+  },
+  "twilightforest:twilight_hunter": {
+    "criteria": {
+      "kobold": "2026-04-09 22:36:51 -0600"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/decorations/vanilla_to_tf_moss": {
+    "criteria": {
+      "has_item": "2026-04-09 22:40:33 -0600"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/building_blocks/tf_moss_to_vanilla": {
+    "criteria": {
+      "has_item": "2026-04-09 22:40:33 -0600"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/decorations/vanilla_to_tf_lilypad": {
+    "criteria": {
+      "has_item": "2026-04-09 22:40:33 -0600"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/decorations/tf_to_vanilla_lilypad": {
+    "criteria": {
+      "has_item": "2026-04-09 22:40:33 -0600"
+    },
+    "done": true
+  },
+  "aether:recipes/decorations/skyroot_cartography_table": {
+    "criteria": {
+      "has_paper": "2026-04-09 22:41:26 -0600"
+    },
+    "done": true
+  },
+  "twilightforest:progress_trophy_pedestal": {
+    "criteria": {
+      "kill_lich": "2026-04-09 22:47:10 -0600"
+    },
+    "done": false
+  },
+  "twilightforest:progress_labyrinth": {
+    "criteria": {
+      "kill_lich": "2026-04-09 22:47:10 -0600"
+    },
+    "done": false
+  },
+  "twilightforest:progress_yeti": {
+    "criteria": {
+      "previous_progression": "2026-04-09 22:47:10 -0600"
+    },
+    "done": false
+  },
+  "twilightforest:recipes/combat/equipment/zombie_scepter": {
+    "criteria": {
+      "has_item": "2026-04-09 22:47:30 -0600"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/misc/lich_banner_pattern": {
+    "criteria": {
+      "has_trophy": "2026-04-09 22:47:40 -0600"
+    },
+    "done": true
+  },
+  "aether:recipes/combat/golden_sword_repairing": {
+    "criteria": {
+      "has_golden_sword": "2026-04-09 22:47:42 -0600"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/food/food/campfired_meef": {
+    "criteria": {
+      "has_food": "2026-04-09 22:52:19 -0600"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/food/food/smelted_meef": {
+    "criteria": {
+      "has_food": "2026-04-09 22:52:19 -0600"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/food/food/smoked_meef": {
+    "criteria": {
+      "has_food": "2026-04-09 22:52:19 -0600"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/building_blocks/compressed_blocks/steeleaf_block": {
+    "criteria": {
+      "has_item": "2026-04-09 22:58:29 -0600"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/tools/charm_of_keeping_2": {
+    "criteria": {
+      "has_item": "2026-04-09 22:59:50 -0600"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/building_blocks/compressed_blocks/ironwood_block": {
+    "criteria": {
+      "has_item": "2026-04-09 23:03:57 -0600"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/misc/maze_map": {
+    "criteria": {
+      "has_item": "2026-04-09 23:04:57 -0600"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/building_blocks/maze_stone/smelted_maze_stone_cracked": {
+    "criteria": {
+      "has_item": "2026-04-09 23:12:46 -0600"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/building_blocks/maze_stone/mossy_mazestone": {
+    "criteria": {
+      "has_item": "2026-04-09 23:12:46 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/paint_brush": {
+    "criteria": {
+      "has_item": "2026-04-09 23:29:58 -0600"
+    },
+    "done": true
+  },
+  "aether:recipes/combat/golden_dart": {
+    "criteria": {
+      "has_feather": "2026-04-09 23:29:58 -0600"
+    },
+    "done": true
+  },
+  "aether:recipes/combat/iron_helmet_repairing": {
+    "criteria": {
+      "has_iron_helmet": "2026-04-09 23:52:21 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/diamond": {
+    "criteria": {
+      "has_diamond_block": "2026-04-12 03:20:43 -0600"
+    },
+    "done": true
+  },
+  "aether:recipes/combat/leather_helmet_repairing": {
+    "criteria": {
+      "has_leather_helmet": "2026-04-12 03:37:06 -0600"
+    },
+    "done": true
+  },
+  "aether:recipes/combat/iron_chestplate_repairing": {
+    "criteria": {
+      "has_iron_chestplate": "2026-04-12 04:00:18 -0600"
     },
     "done": true
   },

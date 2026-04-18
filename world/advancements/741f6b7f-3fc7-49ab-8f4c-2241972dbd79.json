@@ -75,6 +75,7 @@
       "minecraft:wither_skeleton": "2024-06-21 00:00:34 -0600",
       "minecraft:husk": "2025-09-05 23:09:23 -0600",
       "minecraft:shulker": "2025-09-20 21:32:23 -0600",
+      "minecraft:cave_spider": "2026-04-09 22:52:05 -0600",
       "minecraft:piglin": "2024-06-20 22:50:57 -0600",
       "minecraft:enderman": "2024-06-19 23:04:34 -0600",
       "minecraft:stray": "2024-07-10 21:36:10 -0600",
@@ -128,6 +129,7 @@
       "beetroot": "2024-06-16 22:08:58 -0600",
       "cooked_rabbit": "2024-06-16 02:11:36 -0600",
       "cooked_chicken": "2024-10-29 21:33:27 -0600",
+      "mushroom_stew": "2026-04-09 22:57:22 -0600",
       "cooked_salmon": "2024-09-02 00:59:47 -0600",
       "carrot": "2024-06-16 21:37:26 -0600"
     },
@@ -12967,6 +12969,7 @@
   },
   "twilightforest:twilight_dinner": {
     "criteria": {
+      "maze_wafer": "2026-04-09 23:05:12 -0600",
       "torchberries": "2026-02-28 23:01:02 -0700"
     },
     "done": false
@@ -14305,6 +14308,78 @@
   "aquaculture:recipes/aquaculture/tackle_box": {
     "criteria": {
       "has_items": "2026-04-09 21:57:29 -0600"
+    },
+    "done": true
+  },
+  "globalxp:recipes/misc/xp_block": {
+    "criteria": {
+      "has_emerald": "2026-04-09 22:13:34 -0600"
+    },
+    "done": true
+  },
+  "aether:recipes/tools/golden_axe_repairing": {
+    "criteria": {
+      "has_golden_axe": "2026-04-09 22:39:48 -0600"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/food/food/campfired_meef": {
+    "criteria": {
+      "has_food": "2026-04-09 22:39:48 -0600"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/food/food/smelted_meef": {
+    "criteria": {
+      "has_food": "2026-04-09 22:39:48 -0600"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/food/food/smoked_meef": {
+    "criteria": {
+      "has_food": "2026-04-09 22:39:48 -0600"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/misc/lich_banner_pattern": {
+    "criteria": {
+      "has_trophy": "2026-04-09 22:47:30 -0600"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/misc/minoshroom_banner_pattern": {
+    "criteria": {
+      "has_trophy": "2026-04-09 23:06:10 -0600"
+    },
+    "done": true
+  },
+  "create:long_travel": {
+    "criteria": {
+      "0": "2026-04-15 23:13:27 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/sugar_from_honey_bottle": {
+    "criteria": {
+      "has_honey_bottle": "2026-04-18 14:09:24 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/honey_block": {
+    "criteria": {
+      "has_honey_bottle": "2026-04-18 14:09:24 -0600"
+    },
+    "done": true
+  },
+  "aether:recipes/decorations/skyroot_beehive": {
+    "criteria": {
+      "has_honeycomb": "2026-04-18 14:06:33 -0600"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/honey_cookie": {
+    "criteria": {
+      "has_honey_bottle": "2026-04-18 14:09:24 -0600"
     },
     "done": true
   },
