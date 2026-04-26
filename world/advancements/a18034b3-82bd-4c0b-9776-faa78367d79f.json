@@ -12104,5 +12104,17 @@
     },
     "done": true
   },
+  "spartanweaponry:scythe": {
+    "criteria": {
+      "has_scythe": "2026-04-26 01:45:08 -0600"
+    },
+    "done": true
+  },
+  "spartanweaponry:glaive": {
+    "criteria": {
+      "has_glaive": "2026-04-26 01:45:05 -0600"
+    },
+    "done": true
+  },
   "DataVersion": 3465
 }

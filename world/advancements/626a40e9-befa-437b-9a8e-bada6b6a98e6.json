@@ -12995,5 +12995,17 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/emerald": {
+    "criteria": {
+      "has_emerald_block": "2026-04-26 08:58:34 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/lapis_lazuli": {
+    "criteria": {
+      "has_lapis_block": "2026-04-26 08:57:40 -0600"
+    },
+    "done": true
+  },
   "DataVersion": 3465
 }

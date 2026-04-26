@@ -1,31 +1,879 @@
-[25Apr2026 00:44:01.503] [User Authenticator #18/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: UUID of player HockyMan15 is 626a40e9-befa-437b-9a8e-bada6b6a98e6
-[25Apr2026 00:44:04.350] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: HockyMan15[/127.116.208.242:55919] logged in with entity id 472474 at (-3888.3964943192977, 63.0, -234.3464144644112)
-[25Apr2026 00:44:04.356] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: HockyMan15 joined the game
-[25Apr2026 00:44:05.218] [Netty Epoll Server IO #16/ERROR] [dev.architectury.networking.forge.NetworkManagerImpl/]: Unknown message ID: quickskin:texture_chunk
-[25Apr2026 00:44:05.218] [Netty Epoll Server IO #16/ERROR] [dev.architectury.networking.forge.NetworkManagerImpl/]: Unknown message ID: quickskin:update_appearance
-[25Apr2026 00:46:26.592] [pool-27-thread-3/INFO] [Supplementaries/]: Searching for closest structure among [ResourceKey[minecraft:worldgen/structure / minecraft:village_snowy], ResourceKey[minecraft:worldgen/structure / minecraft:village_taiga], ResourceKey[minecraft:worldgen/structure / minecraft:village_savanna], ResourceKey[minecraft:worldgen/structure / minecraft:village_plains], ResourceKey[minecraft:worldgen/structure / minecraft:village_desert]] from pos BlockPos{x=-3877, y=67, z=-587}
-[25Apr2026 00:58:17.337] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: mvs:carts/medium_bamboo_cart
-[25Apr2026 00:58:33.290] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: mvs:dead_tree/oak
-[25Apr2026 00:58:33.290] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: mvs:dead_tree/jungle
-[25Apr2026 00:59:01.986] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: mvs:nature/small_oak_pond
-[25Apr2026 00:59:07.489] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: mvs:other_decoration/pile
-[25Apr2026 00:59:19.839] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: mvs:lantern/small_oak_lantern
-[25Apr2026 01:05:21.033] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: HockyMan15 lost connection: Timed out
-[25Apr2026 01:05:21.033] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: HockyMan15 left the game
-[25Apr2026 19:58:54.030] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping the server
-[25Apr2026 19:58:54.114] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[25Apr2026 19:58:54.114] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[25Apr2026 19:58:54.114] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[25Apr2026 19:58:54.188] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[25Apr2026 19:58:54.477] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
-[25Apr2026 19:58:54.488] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
-[25Apr2026 19:58:54.496] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/aether:the_aether
-[25Apr2026 19:58:54.497] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/twilightforest:twilight_forest
-[25Apr2026 19:58:54.514] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[25Apr2026 19:58:54.514] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[25Apr2026 19:58:54.514] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[25Apr2026 19:58:54.514] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (the_aether): All chunks are saved
-[25Apr2026 19:58:54.514] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (twilight_forest): All chunks are saved
-[25Apr2026 19:58:54.514] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
-[25Apr2026 19:58:55.023] [Server thread/INFO] [Framework/]: Unloading server configs...
-[25Apr2026 19:58:55.024] [Server thread/INFO] [Framework/]: Finished unloading server configs
+[26Apr2026 14:11:42.723] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.forgeVersion, 47.1.106, --fml.fmlVersion, 47.2.2, --fml.mcVersion, 1.20.1, --fml.mcpVersion, 20230612.114412]
+[26Apr2026 14:11:42.725] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.18 by Debian; OS Linux arch amd64 version 6.1.0-44-amd64
+[26Apr2026 14:11:43.135] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgeserver
+[26Apr2026 14:11:43.158] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/home/lexen/Minecraft/Harmony-Cove-Server/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2368!/ Service=ModLauncher Env=SERVER
+[26Apr2026 14:11:43.378] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "aeroblender-1.20.1-1.0.1-neoforge.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.378] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "aether-1.20.1-1.5.2-neoforge.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.378] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "alekiNiftyShips-FORGE-1.20.1-1.0.14.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.378] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "alternate_current-mc1.20-1.7.0.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.378] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "amendments-1.20-2.2.5.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.378] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "anvilrestoration-1.20.1-2.4.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.378] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "Aquaculture-1.20.1-2.5.7.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.378] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "architectury-9.2.14-forge.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.378] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "architectury_and_carpentry-0.1.0b-forge-1.20.1.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.378] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "arrowcollector-mc1.18-1.20-v0.0.2.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.378] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "astikorcarts-redux-1.20.1-1.1.7.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.378] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "betterchunkloading-1.20.1-5.4.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.379] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "canary-mc1.20.1-0.3.3.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.379] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "cfm-forge-1.20.1-7.0.0-pre36.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.379] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "changeitemsdurability-1.20-1.20.1--1.0.0.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.379] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "cloth-config-11.1.136-forge.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.379] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "collective-1.20.1-8.20.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.379] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "comforts-forge-6.4.0+1.20.1.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.379] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "configured-forge-1.20.1-2.2.3.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.379] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "craftable-horse-items-1.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.379] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "create-1.20.1-6.0.8.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.379] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "create_blaze_burner_fuels-1.0.2-forge-1.20.1.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.379] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "createliquidfuel-2.1.1-1.20.1.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.379] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "cupboard-1.20.1-3.7.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.379] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "curios-forge-5.14.1+1.20.1.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.379] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "deep_aether-1.20.1-1.1.7.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.379] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "disenchant_splitter-1.1.0.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.379] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "don't void arrows V.1.2-1.20.1.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.379] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "durabilitytooltip-1.1.5-forge-mc1.20.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.379] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "FallingTree-1.20.1-4.3.4.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.379] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "FarmersDelight-1.20.1-1.2.11a.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.379] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fastasyncworldsave-1.20.1-2.6.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.379] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "ferritecore-6.0.1-forge.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.379] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fixedanvilrepaircost-1.20.1-3.5.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.379] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "Floral Enchantment-1.20.1-1.4.3.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.379] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "FORGE.musketmod.1.20.1.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.379] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "framework-forge-1.20.1-0.8.0.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.379] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "geckolib-forge-1.20.1-4.7.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.379] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "globalxp-forge-1.20.1-1.12.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.379] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "gravestone-1.20.1-1.0.10.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.379] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "gravestonecurioscompat-1.20.1-Forge-2.0.2.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.379] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "guardvillagers-1.20.1-1.6.17.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.379] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "gunpoweder_craft-1.1.0.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "Icterine-forge-1.20.0-1-1.3.0.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "jei-1.20.1-forge-15.20.0.130.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "JRFTL-1.20.1-1.6.0.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "KryptonReforged-0.2.3.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "mes-1.3.4-1.20-forge.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "MineTraps-1.20.2-(v.2.3.0a).jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "Mo-Glass-1.7.1-MC1.20.1-Forge.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "modernfix-forge-5.15.0+mc1.20.1.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "monolib-forge-1.20.1-1.1.0.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "moogs_structure_lib-1.1.0-1.20-1.20.4-forge.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "MoogsNetherStructures-1.20-2.0.3.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "MoogsVoyagerStructures-1.20-5.0.4.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "moonlight-1.20-2.16.30-forge.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "moretinygates-1.20-1.0.6.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "musketmod-1.20.1-forge-1.5.4.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "No Increasing Repair Cost-forge-1.20.1-1.0.0.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "piercearrow-1.20.1-5.0.0.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "Placebo-1.20.1-8.6.3.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "rangedwirelessredstone-1.20-4.0.0.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "redirector-1.20.1-4.4.0-forge.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "Ribbits-1.20.1-Forge-3.0.5.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "saturn-mc1.20.1-0.1.3.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "smoothchunk-1.20.1-4.1.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "sophisticatedbackpacks-1.20.1-3.24.35.1675.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "sophisticatedcore-1.20.1-1.3.26.1759.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "spark-1.10.53-forge.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "SpartanWeaponry-1.20.1-forge-3.2.1-all.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "Steam_Rails-1.7.2+forge-mc1.20.1.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "structureessentials-1.20.1-5.0.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "supermartijn642configlib-1.1.8-forge-mc1.20.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "supermartijn642corelib-1.1.18-forge-mc1.20.1.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "supplementaries-1.20-3.1.41.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "TerraBlender-forge-1.20.1-3.0.1.4.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "tinygates-1.20-4.0.0.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "tinypipes-1.20-4.0.1.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "tinyredstone-1.20-5.0.3.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "ToolReplacement-1.3.0.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "trotting_wagons-1.0.4.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "twilightforest-1.20.1-4.3.2508-universal.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "txnilib-forge-1.0.24-1.20.1.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "ul_anvils-1.20-1.0.1.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "xptome-1.20.1-2.2.1.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "YungsApi-1.20-Forge-4.0.6.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.380] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "zaynens_craftable_nametag_mod_1.20.1.jar" of type MOD with provider {mods folder locator at /home/lexen/Minecraft/Harmony-Cove-Server/mods}
+[26Apr2026 14:11:43.428] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/lexen/Minecraft/Harmony-Cove-Server/libraries/net/neoforged/fancymodloader/core/47.2.2/core-47.2.2.jar is missing mods.toml file
+[26Apr2026 14:11:43.428] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/lexen/Minecraft/Harmony-Cove-Server/libraries/net/neoforged/fancymodloader/language-java/47.2.2/language-java-47.2.2.jar is missing mods.toml file
+[26Apr2026 14:11:43.429] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/lexen/Minecraft/Harmony-Cove-Server/libraries/net/neoforged/fancymodloader/language-lowcode/47.2.2/language-lowcode-47.2.2.jar is missing mods.toml file
+[26Apr2026 14:11:43.429] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/lexen/Minecraft/Harmony-Cove-Server/libraries/net/neoforged/fancymodloader/language-minecraft/47.2.2/language-minecraft-47.2.2.jar is missing mods.toml file
+[26Apr2026 14:11:43.431] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "core-47.2.2.jar" of type LIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@3704122f
+[26Apr2026 14:11:43.431] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "language-java-47.2.2.jar" of type LANGPROVIDER with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@3704122f
+[26Apr2026 14:11:43.431] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "language-lowcode-47.2.2.jar" of type LANGPROVIDER with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@3704122f
+[26Apr2026 14:11:43.431] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "language-minecraft-47.2.2.jar" of type LANGPROVIDER with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@3704122f
+[26Apr2026 14:11:43.431] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "server-1.20.1-20230612.114412-srg.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@3704122f
+[26Apr2026 14:11:43.431] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "forge-1.20.1-47.1.106-universal.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.MinecraftLocator@3704122f
+[26Apr2026 14:11:43.432] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "events-47.2.2.jar" of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.BuiltinGameLibraryLocator@7692cd34
+[26Apr2026 14:11:43.719] [main/WARN] [net.minecraftforge.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: aeroblender. Using Mod File: /home/lexen/Minecraft/Harmony-Cove-Server/mods/aeroblender-1.20.1-1.0.1-neoforge.jar
+[26Apr2026 14:11:43.719] [main/WARN] [net.minecraftforge.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: curios. Using Mod File: /home/lexen/Minecraft/Harmony-Cove-Server/mods/curios-forge-5.14.1+1.20.1.jar
+[26Apr2026 14:11:43.719] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 57 dependencies adding them to mods collection
+[26Apr2026 14:11:43.719] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-transfer-api-v1-3.3.5+631c9cd677.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.719] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-dimensions-v1-2.1.54+8005d10d77.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.719] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-renderer-api-v1-3.2.1+cf68abbe77.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.719] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "Ponder-Forge-1.20.1-1.0.91.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.719] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-item-api-v1-2.1.28+4d0bbcfa77.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-model-loading-api-v1-1.0.3+6274ab9d77.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-rendering-fluids-v1-3.0.28+4ac5e37a77.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "mixinextras-forge-0.5.3.jar" of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-screen-handler-api-v1-1.3.30+561530ec77.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-models-v0-0.4.2+7c3892a477.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-resource-loader-v0-0.11.10+bcd08ed377.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "mclib-20.jar" of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-rendering-v1-3.0.8+66e9a48f77.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-renderer-indigo-1.5.2+b5b2da4177.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-loader-2.6.0+0.15.0+1.20.1-full.jar" of type LANGPROVIDER with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-convention-tags-v1-1.5.5+fa3d1c0177.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-mining-level-api-v1-2.1.50+561530ec77.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-command-api-v1-1.2.34+f71b366f77.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-block-view-api-v2-1.0.1+0767707077.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-command-api-v2-2.2.13+561530ec77.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "MixinSquared-0.1.1.jar" of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-data-attachment-api-v1-1.0.0+30ef839e77.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "mixinextras-forge-0.2.0-beta.9.jar" of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "MixinExtras-0.5.3.jar" of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-screen-api-v1-2.0.8+45a670a577.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-particles-v1-1.1.2+78e1ecb877.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-api-0.92.2+1.11.12+1.20.1.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-content-registries-v0-4.0.11+a670df1e77.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-transitive-access-wideners-v1-4.3.1+1880499877.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-game-rule-api-v1-1.0.40+683d4da877.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-api-base-0.4.31+ef105b4977.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-api-lookup-api-v1-1.6.36+67f9824077.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-blockrenderlayer-v1-1.1.41+1d0da21e77.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "mixinsquared-forge-0.1.1.jar" of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "Registrate-MC1.20-1.3.3.jar" of type GAMELIBRARY with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "spectrelib-forge-0.13.15+1.20.1.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-block-api-v1-1.0.11+0e6cb7f777.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-resource-conditions-api-v1-2.3.8+9e342fc177.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "flywheel-forge-1.20.1-1.0.5.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-item-group-api-v1-4.0.12+c9161c2d77.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-biome-api-v1-13.0.13+dc36698e77.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-entity-events-v1-1.6.0+4ca7515277.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-registry-sync-v0-2.3.3+1c0ea72177.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "cumulus_menus-1.20.1-1.0.1-neoforge.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-recipe-api-v1-1.0.21+514a076577.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-loot-api-v2-1.2.1+eb28f93e77.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-object-builder-api-v1-11.1.3+4bd998fa77.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-rendering-data-attachment-v1-0.3.37+a6081afc77.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "nitrogen_internals-1.20.1-1.0.12-neoforge.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-networking-api-v1-1.3.11+503a202477.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-sound-api-v1-1.0.13+4f23bd8477.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-message-api-v1-5.1.9+52cc178c77.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-lifecycle-events-v1-2.2.22+afab492177.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-data-generation-api-v1-12.3.4+369cb3a477.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-events-interaction-v0-0.6.2+0d0bd5a777.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.720] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-key-binding-api-v1-1.0.37+561530ec77.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:43.721] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-client-tags-api-v1-1.1.2+5d6761b877.jar" of type MOD with provider net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator@7a34b7b8
+[26Apr2026 14:11:45.337] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[26Apr2026 14:11:45.343] [main/ERROR] [mixin/]: Mixin config musketmod.mixins.json does not specify "minVersion" property
+[26Apr2026 14:11:45.345] [main/ERROR] [mixin/]: Mixin config fabric-item-group-api-v1.mixins.json does not specify "minVersion" property
+[26Apr2026 14:11:45.345] [main/ERROR] [mixin/]: Mixin config fabric-item-group-api-v1.client.mixins.json does not specify "minVersion" property
+[26Apr2026 14:11:45.357] [main/ERROR] [mixin/]: Mixin config fabric-item-api-v1.client.mixins.json does not specify "minVersion" property
+[26Apr2026 14:11:45.381] [main/ERROR] [mixin/]: Mixin config fabric-data-attachment-api-v1.mixins.json does not specify "minVersion" property
+[26Apr2026 14:11:45.381] [main/ERROR] [mixin/]: Mixin config fabric-data-attachment-api-v1.client.mixins.json does not specify "minVersion" property
+[26Apr2026 14:11:45.383] [main/INFO] [net.fabricmc.loader.impl.bootstrap.FabricLoaderBootstrap/]: Propagating FML mod list to Fabric Loader
+[26Apr2026 14:11:45.390] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserver' with arguments []
+[26Apr2026 14:11:45.428] [main/WARN] [mixin/]: Reference map 'CreateLiquidFuel.refmap.json' for createliquidfuel.mixins.json could not be read. If this is a development environment you can ignore this message
+[26Apr2026 14:11:45.440] [main/INFO] [Canary/]: Loaded configuration file for Canary: 116 options available, 0 override(s) found
+[26Apr2026 14:11:45.443] [main/WARN] [mixin/]: Reference map 'mes-forge-refmap.json' for mes-forge.mixins.json could not be read. If this is a development environment you can ignore this message
+[26Apr2026 14:11:45.472] [main/INFO] [ModernFix/]: Loaded configuration file for ModernFix 5.15.0+mc1.20.1: 77 options available, 0 override(s) found
+[26Apr2026 14:11:45.472] [main/INFO] [ModernFix/]: Applying Nashorn fix
+[26Apr2026 14:11:45.479] [main/INFO] [ModernFix/]: Applied Forge config corruption patch
+[26Apr2026 14:11:45.486] [main/WARN] [mixin/]: Reference map 'nitrogen_internals.refmap.json' for nitrogen_internals.mixins.json could not be read. If this is a development environment you can ignore this message
+[26Apr2026 14:11:45.498] [main/INFO] [com.abdelaziz.saturn.common.Saturn/]: Loaded Saturn config file with 4 configurable options
+[26Apr2026 14:11:45.501] [main/WARN] [mixin/]: Reference map 'corpsecurioscompat.refmap.json' for gravestonecurioscompat.mixins.json could not be read. If this is a development environment you can ignore this message
+[26Apr2026 14:11:45.554] [main/WARN] [mixin/]: Reference map 'monolib.refmap.json' for monolib.mixins.json could not be read. If this is a development environment you can ignore this message
+[26Apr2026 14:11:45.555] [main/WARN] [mixin/]: Reference map 'monolib.refmap.json' for monolib.forge.mixins.json could not be read. If this is a development environment you can ignore this message
+[26Apr2026 14:11:45.963] [main/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
+[26Apr2026 14:11:45.968] [main/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
+[26Apr2026 14:11:46.178] [main/WARN] [mixin/]: Error loading class: com/legacy/lost_aether/entity/AerwhaleKingEntity (java.lang.ClassNotFoundException: com.legacy.lost_aether.entity.AerwhaleKingEntity)
+[26Apr2026 14:11:46.320] [main/WARN] [mixin/]: Error loading class: net/minecraft/client/gui/screens/inventory/AnvilScreen (java.lang.ClassNotFoundException: net.minecraft.client.gui.screens.inventory.AnvilScreen)
+[26Apr2026 14:11:46.320] [main/WARN] [mixin/]: @Mixin target net.minecraft.client.gui.screens.inventory.AnvilScreen was not found ulanvils.mixins.json:MixinAnvilScreen
+[26Apr2026 14:11:46.331] [main/INFO] [com.cupboard.Cupboard/]: Loaded config for: structureessentials.json
+[26Apr2026 14:11:46.405] [main/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/MouseHandler for invalid dist DEDICATED_SERVER
+[26Apr2026 14:11:46.406] [main/WARN] [mixin/]: Error loading class: net/minecraft/client/MouseHandler (java.lang.RuntimeException: Attempted to load class net/minecraft/client/MouseHandler for invalid dist DEDICATED_SERVER)
+[26Apr2026 14:11:46.406] [main/WARN] [mixin/]: @Mixin target net.minecraft.client.MouseHandler was not found fabric-screen-api-v1.mixins.json:MouseMixin
+[26Apr2026 14:11:46.406] [main/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/gui/screens/Screen for invalid dist DEDICATED_SERVER
+[26Apr2026 14:11:46.407] [main/WARN] [mixin/]: Error loading class: net/minecraft/client/gui/screens/Screen (java.lang.RuntimeException: Attempted to load class net/minecraft/client/gui/screens/Screen for invalid dist DEDICATED_SERVER)
+[26Apr2026 14:11:46.407] [main/WARN] [mixin/]: @Mixin target net.minecraft.client.gui.screens.Screen was not found fabric-screen-api-v1.mixins.json:ScreenAccessor
+[26Apr2026 14:11:46.637] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.3).
+[26Apr2026 14:11:47.143] [main/INFO] [net.minecraft.server.Bootstrap/]: ModernFix reached bootstrap stage (5.472 s after launch)
+[26Apr2026 14:11:47.254] [main/WARN] [mixin/]: @Final field delegatesByName:Ljava/util/Map; in modernfix-forge.mixins.json:perf.forge_registry_alloc.ForgeRegistryMixin should be final
+[26Apr2026 14:11:47.254] [main/WARN] [mixin/]: @Final field delegatesByValue:Ljava/util/Map; in modernfix-forge.mixins.json:perf.forge_registry_alloc.ForgeRegistryMixin should be final
+[26Apr2026 14:11:47.286] [main/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
+[26Apr2026 14:11:47.287] [main/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
+[26Apr2026 14:11:47.327] [main/INFO] [ModernFix/]: Injecting BlockStateBase cache population hook into getNeighborPathNodeType from com.abdelaziz.canary.mixin.ai.pathing.BlockStateBaseMixin
+[26Apr2026 14:11:47.327] [main/INFO] [ModernFix/]: Injecting BlockStateBase cache population hook into getPathNodeType from com.abdelaziz.canary.mixin.ai.pathing.BlockStateBaseMixin
+[26Apr2026 14:11:47.914] [main/WARN] [mixin/]: @Redirect conflict. Skipping redirector.mixins.json:net.minecraft.world.level.block.piston.PistonBaseBlockMixin->@Redirect::redirectDirections()[Lnet/minecraft/core/Direction; with priority 10, already redirected by canary.mixins.json:alloc.enum_values.piston_block.PistonBaseBlockMixin->@Redirect::removeAllocation()[Lnet/minecraft/core/Direction; with priority 1000
+[26Apr2026 14:11:47.914] [main/WARN] [mixin/]: @Redirect conflict. Skipping redirector.mixins.json:net.minecraft.world.level.block.piston.PistonBaseBlockMixin->@Redirect::redirectDirections()[Lnet/minecraft/core/Direction; with priority 10, already redirected by canary.mixins.json:alloc.enum_values.piston_block.PistonBaseBlockMixin->@Redirect::removeAllocation()[Lnet/minecraft/core/Direction; with priority 1000
+[26Apr2026 14:11:47.928] [main/WARN] [mixin/]: @Redirect conflict. Skipping redirector.mixins.json:net.minecraft.world.level.block.RedStoneWireBlockMixin->@Redirect::redirectDirections()[Lnet/minecraft/core/Direction; with priority 10, already redirected by canary.mixins.json:alloc.enum_values.redstone_wire.RedStoneWireBlockMixin->@Redirect::removeAllocation1()[Lnet/minecraft/core/Direction; with priority 1000
+[26Apr2026 14:11:47.928] [main/WARN] [mixin/]: @Redirect conflict. Skipping redirector.mixins.json:net.minecraft.world.level.block.RedStoneWireBlockMixin->@Redirect::redirectDirections()[Lnet/minecraft/core/Direction; with priority 10, already redirected by canary.mixins.json:alloc.enum_values.redstone_wire.RedStoneWireBlockMixin->@Redirect::removeAllocation2()[Lnet/minecraft/core/Direction; with priority 1000
+[26Apr2026 14:11:48.100] [main/INFO] [net.minecraft.server.Bootstrap/]: Vanilla bootstrap took 955 milliseconds
+[26Apr2026 14:11:48.284] [main/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
+[26Apr2026 14:11:48.284] [main/INFO] [net.minecraftforge.coremod.CoreMod.placebo/COREMODLOG]: Patching IForgeItemStack#getEnchantmentLevel
+[26Apr2026 14:11:48.820] [main/WARN] [mixin/]: @Final field f_26027_:Lnet/minecraft/world/entity/ai/targeting/TargetingConditions; in guardvillagers.mixins.json:DefendVillageGoalGolemMixin should be final
+[26Apr2026 14:11:49.381] [main/WARN] [mixin/]: Method overwrite conflict for m_47505_ in saturn.mixins.json:leaks.biome_temperature_cache.BiomeMixin, previously written by org.embeddedt.modernfix.common.mixin.perf.remove_biome_temperature_cache.BiomeMixin. Skipping method.
+[26Apr2026 14:11:49.656] [modloading-worker-0/INFO] [com.leclowndu93150.corpsecurioscompat.Main/]: Hello from Gravestone Curios Compat!
+[26Apr2026 14:11:49.676] [modloading-worker-0/INFO] [Railways/]: Steam 'n' Rails v1.7.2 initializing! Commit hash: 7c1a21e3a4edbd6b5f1301f82a8bfbeb5fdb1444 on Create version: 6.0.8 on platform: Forge
+[26Apr2026 14:11:49.691] [modloading-worker-0/INFO] [ewewukek.musketmod.MusketMod/]: Configuration has been loaded
+[26Apr2026 14:11:49.698] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file /home/lexen/Minecraft/Harmony-Cove-Server/config/guardvillagers-common.toml is not correct. Correcting
+[26Apr2026 14:11:49.716] [modloading-worker-0/INFO] [Collective/]: Loading Collective version 8.20.
+[26Apr2026 14:11:49.746] [modloading-worker-0/INFO] [com.aetherteam.cumulus.Cumulus/]: Disabling Cumulus as it is on server.
+[26Apr2026 14:11:49.749] [modloading-worker-0/INFO] [Spartan Weaponry/]: Constructing Mod: Spartan Weaponry
+[26Apr2026 14:11:49.750] [modloading-worker-0/INFO] [Spartan Weaponry/]: Initialising API! Version: 12
+[26Apr2026 14:11:49.758] [modloading-worker-0/INFO] [Spartan Weaponry/]: Spartan Weaponry API version 12 has been initalized!
+[26Apr2026 14:11:49.762] [modloading-worker-0/INFO] [com.cupboard.Cupboard/]: Loaded config for: cupboard.json
+[26Apr2026 14:11:49.919] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: NeoForge mod loading, version 47.1.106, for MC 1.20.1 with MCP 20230612.114412
+[26Apr2026 14:11:49.920] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: NeoForge v47.1.106 Initialized
+[26Apr2026 14:11:49.937] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id architectury:sync_ids
+[26Apr2026 14:11:49.977] [modloading-worker-0/INFO] [com.simibubi.create.Create/]: Create 6.0.8 initializing! Commit hash: 1a1a9a2819b4f89f78caec41b55ed8cb222fa24b
+[26Apr2026 14:11:50.240] [modloading-worker-0/INFO] [ModernFix/]: Bypassed Mojang DFU
+[26Apr2026 14:11:50.241] [modloading-worker-0/INFO] [ModernFix/]: Instantiating Mojang DFU
+[26Apr2026 14:11:50.758] [modloading-worker-0/INFO] [Railways/]: Registered bogey styles from railways
+[26Apr2026 14:11:50.883] [modloading-worker-0/INFO] [Railways/]: Registering data fixers
+[26Apr2026 14:11:50.893] [modloading-worker-0/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 0 Datafixer optimizations took 0 milliseconds
+[26Apr2026 14:11:50.896] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:track_signal in minecraft:block_entity_type
+[26Apr2026 14:11:50.896] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:track_signal_source in create:display_source
+[26Apr2026 14:11:50.897] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:copycat in minecraft:block_entity_type
+[26Apr2026 14:11:50.897] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:conductor_vent in minecraft:block
+[26Apr2026 14:11:50.897] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:flywheel in minecraft:block_entity_type
+[26Apr2026 14:11:50.897] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:locometal_flywheel in minecraft:block
+[26Apr2026 14:11:50.897] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.897] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:sliding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.897] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.897] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:folding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.897] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:flywheel in minecraft:block_entity_type
+[26Apr2026 14:11:50.897] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:brown_locometal_flywheel in minecraft:block
+[26Apr2026 14:11:50.897] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.897] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:brown_sliding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.897] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.897] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:brown_folding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.897] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:flywheel in minecraft:block_entity_type
+[26Apr2026 14:11:50.897] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:maroon_locometal_flywheel in minecraft:block
+[26Apr2026 14:11:50.898] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.898] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:maroon_sliding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.898] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.898] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:maroon_folding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.898] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:flywheel in minecraft:block_entity_type
+[26Apr2026 14:11:50.898] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:red_locometal_flywheel in minecraft:block
+[26Apr2026 14:11:50.898] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.898] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:red_sliding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.898] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.898] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:red_folding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.898] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:flywheel in minecraft:block_entity_type
+[26Apr2026 14:11:50.898] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:vermilion_locometal_flywheel in minecraft:block
+[26Apr2026 14:11:50.898] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.898] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:vermilion_sliding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.898] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.898] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:vermilion_folding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.898] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:flywheel in minecraft:block_entity_type
+[26Apr2026 14:11:50.898] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:orange_locometal_flywheel in minecraft:block
+[26Apr2026 14:11:50.898] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.898] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:orange_sliding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.898] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.899] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:orange_folding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.899] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:flywheel in minecraft:block_entity_type
+[26Apr2026 14:11:50.899] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:granite_locometal_flywheel in minecraft:block
+[26Apr2026 14:11:50.899] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.899] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:granite_sliding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.899] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.899] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:granite_folding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.899] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:flywheel in minecraft:block_entity_type
+[26Apr2026 14:11:50.899] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:dripstone_locometal_flywheel in minecraft:block
+[26Apr2026 14:11:50.899] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.899] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:dripstone_sliding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.899] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.899] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:dripstone_folding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.899] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:flywheel in minecraft:block_entity_type
+[26Apr2026 14:11:50.899] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:ochrum_locometal_flywheel in minecraft:block
+[26Apr2026 14:11:50.899] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.899] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:ochrum_sliding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.899] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.899] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:ochrum_folding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.900] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:flywheel in minecraft:block_entity_type
+[26Apr2026 14:11:50.900] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:yellow_locometal_flywheel in minecraft:block
+[26Apr2026 14:11:50.900] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.900] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:yellow_sliding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.900] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.900] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:yellow_folding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.900] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:flywheel in minecraft:block_entity_type
+[26Apr2026 14:11:50.900] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:chartreuse_locometal_flywheel in minecraft:block
+[26Apr2026 14:11:50.900] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.900] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:chartreuse_sliding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.900] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.900] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:chartreuse_folding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.900] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:flywheel in minecraft:block_entity_type
+[26Apr2026 14:11:50.900] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:olive_green_locometal_flywheel in minecraft:block
+[26Apr2026 14:11:50.900] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.900] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:olive_green_sliding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.900] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.900] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:olive_green_folding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.900] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:flywheel in minecraft:block_entity_type
+[26Apr2026 14:11:50.900] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:lime_locometal_flywheel in minecraft:block
+[26Apr2026 14:11:50.900] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.900] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:lime_sliding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.900] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.900] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:lime_folding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.901] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:flywheel in minecraft:block_entity_type
+[26Apr2026 14:11:50.901] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:green_locometal_flywheel in minecraft:block
+[26Apr2026 14:11:50.901] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.901] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:green_sliding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.901] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.901] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:green_folding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.901] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:flywheel in minecraft:block_entity_type
+[26Apr2026 14:11:50.901] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:pine_green_locometal_flywheel in minecraft:block
+[26Apr2026 14:11:50.901] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.901] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:pine_green_sliding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.901] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.901] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:pine_green_folding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.901] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:flywheel in minecraft:block_entity_type
+[26Apr2026 14:11:50.901] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:cyan_locometal_flywheel in minecraft:block
+[26Apr2026 14:11:50.901] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.901] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:cyan_sliding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.901] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.901] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:cyan_folding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.901] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:flywheel in minecraft:block_entity_type
+[26Apr2026 14:11:50.901] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:sea_green_locometal_flywheel in minecraft:block
+[26Apr2026 14:11:50.901] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.901] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:sea_green_sliding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.902] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.902] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:sea_green_folding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.902] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:flywheel in minecraft:block_entity_type
+[26Apr2026 14:11:50.902] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:turquoise_locometal_flywheel in minecraft:block
+[26Apr2026 14:11:50.902] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.902] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:turquoise_sliding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.902] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.902] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:turquoise_folding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.902] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:flywheel in minecraft:block_entity_type
+[26Apr2026 14:11:50.902] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:light_blue_locometal_flywheel in minecraft:block
+[26Apr2026 14:11:50.902] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.902] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:light_blue_sliding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.902] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.902] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:light_blue_folding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.902] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:flywheel in minecraft:block_entity_type
+[26Apr2026 14:11:50.902] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:blue_locometal_flywheel in minecraft:block
+[26Apr2026 14:11:50.903] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.903] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:blue_sliding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.903] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.903] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:blue_folding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.903] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:flywheel in minecraft:block_entity_type
+[26Apr2026 14:11:50.903] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:royal_blue_locometal_flywheel in minecraft:block
+[26Apr2026 14:11:50.903] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.903] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:royal_blue_sliding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.903] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.903] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:royal_blue_folding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.903] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:flywheel in minecraft:block_entity_type
+[26Apr2026 14:11:50.903] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:purple_locometal_flywheel in minecraft:block
+[26Apr2026 14:11:50.903] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.903] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:purple_sliding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.903] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.903] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:purple_folding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.903] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:flywheel in minecraft:block_entity_type
+[26Apr2026 14:11:50.903] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:magenta_locometal_flywheel in minecraft:block
+[26Apr2026 14:11:50.903] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.903] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:magenta_sliding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.903] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.903] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:magenta_folding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.903] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:flywheel in minecraft:block_entity_type
+[26Apr2026 14:11:50.903] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:pink_locometal_flywheel in minecraft:block
+[26Apr2026 14:11:50.903] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.904] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:pink_sliding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.904] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.904] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:pink_folding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.904] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:flywheel in minecraft:block_entity_type
+[26Apr2026 14:11:50.904] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:white_locometal_flywheel in minecraft:block
+[26Apr2026 14:11:50.904] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.904] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:white_sliding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.904] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.904] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:white_folding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.904] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:flywheel in minecraft:block_entity_type
+[26Apr2026 14:11:50.904] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:diorite_locometal_flywheel in minecraft:block
+[26Apr2026 14:11:50.904] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.904] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:diorite_sliding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.904] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.904] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:diorite_folding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.904] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:flywheel in minecraft:block_entity_type
+[26Apr2026 14:11:50.904] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:limestone_locometal_flywheel in minecraft:block
+[26Apr2026 14:11:50.904] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.904] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:limestone_sliding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.904] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.904] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:limestone_folding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.904] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:flywheel in minecraft:block_entity_type
+[26Apr2026 14:11:50.904] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:light_gray_locometal_flywheel in minecraft:block
+[26Apr2026 14:11:50.904] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.904] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:light_gray_sliding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.904] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.904] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:light_gray_folding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.904] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:flywheel in minecraft:block_entity_type
+[26Apr2026 14:11:50.904] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:tuff_locometal_flywheel in minecraft:block
+[26Apr2026 14:11:50.904] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.905] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:tuff_sliding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.905] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.905] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:tuff_folding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.905] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:flywheel in minecraft:block_entity_type
+[26Apr2026 14:11:50.905] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:gray_locometal_flywheel in minecraft:block
+[26Apr2026 14:11:50.905] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.905] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:gray_sliding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.905] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.905] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:gray_folding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.905] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:flywheel in minecraft:block_entity_type
+[26Apr2026 14:11:50.905] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:scorchia_locometal_flywheel in minecraft:block
+[26Apr2026 14:11:50.905] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.905] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:scorchia_sliding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.905] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.905] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:scorchia_folding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.905] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:flywheel in minecraft:block_entity_type
+[26Apr2026 14:11:50.905] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:black_locometal_flywheel in minecraft:block
+[26Apr2026 14:11:50.905] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.905] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:black_sliding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.905] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for create:sliding_door in minecraft:block_entity_type
+[26Apr2026 14:11:50.905] [modloading-worker-0/INFO] [Railways/MultiRegistryCallback/]: Registering callback for railways:black_folding_locometal_door in minecraft:block
+[26Apr2026 14:11:50.910] [modloading-worker-0/INFO] [Railways/]: Registering tracks for Hex Casting
+[26Apr2026 14:11:50.911] [modloading-worker-0/INFO] [Railways/]: Registering tracks for Oh The Biomes You'll Go
+[26Apr2026 14:11:50.911] [modloading-worker-0/INFO] [Railways/]: Registering tracks for Blue Skies
+[26Apr2026 14:11:50.912] [modloading-worker-0/INFO] [Railways/]: Registering tracks for Twilight Forest
+[26Apr2026 14:11:50.919] [modloading-worker-0/INFO] [Railways/]: Registering tracks for Biomes O' Plenty
+[26Apr2026 14:11:50.920] [modloading-worker-0/INFO] [Railways/]: Registering tracks for Nature's Spirit
+[26Apr2026 14:11:50.920] [modloading-worker-0/INFO] [Railways/]: Registering tracks for Dreams and Desires
+[26Apr2026 14:11:50.920] [modloading-worker-0/INFO] [Railways/]: Registering tracks for Quark
+[26Apr2026 14:11:50.920] [modloading-worker-0/INFO] [Railways/]: Registering tracks for TerraFirmaCraft
+[26Apr2026 14:11:53.098] [main/INFO] [Moonlight/]: Initialized block sets in 11ms
+[26Apr2026 14:11:53.143] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:flywheel and railways:locometal_flywheel
+[26Apr2026 14:11:53.143] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:flywheel and railways:brown_locometal_flywheel
+[26Apr2026 14:11:53.143] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:flywheel and railways:maroon_locometal_flywheel
+[26Apr2026 14:11:53.143] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:flywheel and railways:red_locometal_flywheel
+[26Apr2026 14:11:53.143] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:flywheel and railways:vermilion_locometal_flywheel
+[26Apr2026 14:11:53.143] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:flywheel and railways:orange_locometal_flywheel
+[26Apr2026 14:11:53.143] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:flywheel and railways:granite_locometal_flywheel
+[26Apr2026 14:11:53.143] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:flywheel and railways:dripstone_locometal_flywheel
+[26Apr2026 14:11:53.143] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:flywheel and railways:ochrum_locometal_flywheel
+[26Apr2026 14:11:53.143] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:flywheel and railways:yellow_locometal_flywheel
+[26Apr2026 14:11:53.143] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:flywheel and railways:chartreuse_locometal_flywheel
+[26Apr2026 14:11:53.143] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:flywheel and railways:olive_green_locometal_flywheel
+[26Apr2026 14:11:53.143] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:flywheel and railways:lime_locometal_flywheel
+[26Apr2026 14:11:53.143] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:flywheel and railways:green_locometal_flywheel
+[26Apr2026 14:11:53.143] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:flywheel and railways:pine_green_locometal_flywheel
+[26Apr2026 14:11:53.143] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:flywheel and railways:cyan_locometal_flywheel
+[26Apr2026 14:11:53.143] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:flywheel and railways:sea_green_locometal_flywheel
+[26Apr2026 14:11:53.143] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:flywheel and railways:turquoise_locometal_flywheel
+[26Apr2026 14:11:53.143] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:flywheel and railways:light_blue_locometal_flywheel
+[26Apr2026 14:11:53.143] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:flywheel and railways:blue_locometal_flywheel
+[26Apr2026 14:11:53.143] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:flywheel and railways:royal_blue_locometal_flywheel
+[26Apr2026 14:11:53.143] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:flywheel and railways:purple_locometal_flywheel
+[26Apr2026 14:11:53.143] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:flywheel and railways:magenta_locometal_flywheel
+[26Apr2026 14:11:53.143] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:flywheel and railways:pink_locometal_flywheel
+[26Apr2026 14:11:53.143] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:flywheel and railways:white_locometal_flywheel
+[26Apr2026 14:11:53.143] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:flywheel and railways:diorite_locometal_flywheel
+[26Apr2026 14:11:53.143] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:flywheel and railways:limestone_locometal_flywheel
+[26Apr2026 14:11:53.143] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:flywheel and railways:light_gray_locometal_flywheel
+[26Apr2026 14:11:53.143] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:flywheel and railways:tuff_locometal_flywheel
+[26Apr2026 14:11:53.143] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:flywheel and railways:gray_locometal_flywheel
+[26Apr2026 14:11:53.143] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:flywheel and railways:scorchia_locometal_flywheel
+[26Apr2026 14:11:53.143] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:flywheel and railways:black_locometal_flywheel
+[26Apr2026 14:11:53.144] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:sliding_locometal_door
+[26Apr2026 14:11:53.144] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:folding_locometal_door
+[26Apr2026 14:11:53.144] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:brown_sliding_locometal_door
+[26Apr2026 14:11:53.144] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:brown_folding_locometal_door
+[26Apr2026 14:11:53.144] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:maroon_sliding_locometal_door
+[26Apr2026 14:11:53.144] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:maroon_folding_locometal_door
+[26Apr2026 14:11:53.144] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:red_sliding_locometal_door
+[26Apr2026 14:11:53.144] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:red_folding_locometal_door
+[26Apr2026 14:11:53.144] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:vermilion_sliding_locometal_door
+[26Apr2026 14:11:53.144] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:vermilion_folding_locometal_door
+[26Apr2026 14:11:53.144] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:orange_sliding_locometal_door
+[26Apr2026 14:11:53.144] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:orange_folding_locometal_door
+[26Apr2026 14:11:53.144] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:granite_sliding_locometal_door
+[26Apr2026 14:11:53.144] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:granite_folding_locometal_door
+[26Apr2026 14:11:53.144] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:dripstone_sliding_locometal_door
+[26Apr2026 14:11:53.144] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:dripstone_folding_locometal_door
+[26Apr2026 14:11:53.144] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:ochrum_sliding_locometal_door
+[26Apr2026 14:11:53.144] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:ochrum_folding_locometal_door
+[26Apr2026 14:11:53.144] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:yellow_sliding_locometal_door
+[26Apr2026 14:11:53.144] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:yellow_folding_locometal_door
+[26Apr2026 14:11:53.144] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:chartreuse_sliding_locometal_door
+[26Apr2026 14:11:53.144] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:chartreuse_folding_locometal_door
+[26Apr2026 14:11:53.144] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:olive_green_sliding_locometal_door
+[26Apr2026 14:11:53.144] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:olive_green_folding_locometal_door
+[26Apr2026 14:11:53.144] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:lime_sliding_locometal_door
+[26Apr2026 14:11:53.144] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:lime_folding_locometal_door
+[26Apr2026 14:11:53.144] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:green_sliding_locometal_door
+[26Apr2026 14:11:53.144] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:green_folding_locometal_door
+[26Apr2026 14:11:53.144] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:pine_green_sliding_locometal_door
+[26Apr2026 14:11:53.144] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:pine_green_folding_locometal_door
+[26Apr2026 14:11:53.144] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:cyan_sliding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:cyan_folding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:sea_green_sliding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:sea_green_folding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:turquoise_sliding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:turquoise_folding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:light_blue_sliding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:light_blue_folding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:blue_sliding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:blue_folding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:royal_blue_sliding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:royal_blue_folding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:purple_sliding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:purple_folding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:magenta_sliding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:magenta_folding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:pink_sliding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:pink_folding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:white_sliding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:white_folding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:diorite_sliding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:diorite_folding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:limestone_sliding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:limestone_folding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:light_gray_sliding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:light_gray_folding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:tuff_sliding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:tuff_folding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:gray_sliding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:gray_folding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:scorchia_sliding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:scorchia_folding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:black_sliding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:sliding_door and railways:black_folding_locometal_door
+[26Apr2026 14:11:53.145] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:copycat and railways:conductor_vent
+[26Apr2026 14:11:53.317] [main/INFO] [Railways/MultiRegistryCallback/]: Running callback for create:track_signal and railways:track_signal_source
+[26Apr2026 14:11:53.317] [main/INFO] [Railways/MultiRegistryCallback/]: Running finalizers
+[26Apr2026 14:11:53.612] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file /home/lexen/Minecraft/Harmony-Cove-Server/config/guardvillagers-common.toml is not correct. Correcting
+[26Apr2026 14:11:53.620] [main/INFO] [Spartan Weaponry/]: Updating config settings!
+[26Apr2026 14:11:53.780] [modloading-worker-0/INFO] [com.structureessentials.StructureEssentials/]: structureessentials mod initialized
+[26Apr2026 14:11:53.784] [modloading-worker-0/INFO] [com.gmail.picono435.changeitemsdurability.ChangeItemsDurability/]: The durability of the item minecraft:shield has been changed to 0
+[26Apr2026 14:11:53.784] [modloading-worker-0/ERROR] [com.gmail.picono435.changeitemsdurability.ChangeItemsDurability/]: Loading thingies
+[26Apr2026 14:11:53.784] [modloading-worker-0/INFO] [Spartan Weaponry/]: Setting up Spartan Weaponry!
+[26Apr2026 14:11:53.812] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [saturn] Starting version check at https://github.com/AbdElAziz333/Saturn/raw/mc1.20.1/dev/updates.json
+[26Apr2026 14:11:53.831] [modloading-worker-0/INFO] [com.betterchunkloading.BetterChunkLoading/]: betterchunkloading mod initialized
+[26Apr2026 14:11:53.869] [modloading-worker-0/INFO] [me.steinborn.krypton.mod.shared.Krypton/]: Compression will use libdeflate (Linux x86_64), encryption will use OpenSSL 3.0.x (Linux x86_64)
+[26Apr2026 14:11:53.935] [main/INFO] [ribbits/]: Registering Ribbit umbrella types...
+[26Apr2026 14:11:53.935] [main/INFO] [ribbits/]: Registering Ribbit professions...
+[26Apr2026 14:11:53.935] [main/INFO] [ribbits/]: Registering Ribbit instruments...
+[26Apr2026 14:11:53.936] [main/INFO] [ribbits/]: Registering Ribbit data serializers...
+[26Apr2026 14:11:53.966] [main/INFO] [Moonlight/]: Initialized color sets in 22ms
+[26Apr2026 14:11:53.966] [main/ERROR] [Moonlight/]: Fabric API detected! This is not a Fabric mod, so please dont report related issues to MoonlightLib or its dependant. This can usually happen with connector or when having a mod that does NOT have a proper Forge native implementation. This can easily lead to poor compatibility and issues. Proceed ar your own risk. 
+ Mods that bundled Fabric API: [net.minecraftforge.fml.loading.moddiscovery.ModInfo@6a48a7f3]
+[26Apr2026 14:11:53.977] [main/INFO] [Supplementaries/]: Finished mod setup in: [0, 1, 0, 0, 0, 0, 4, 0] ms
+[26Apr2026 14:11:53.984] [main/INFO] [terrablender/]: Registered region minecraft:overworld to index 0 for type OVERWORLD
+[26Apr2026 14:11:53.984] [main/INFO] [terrablender/]: Registered region minecraft:nether to index 0 for type NETHER
+[26Apr2026 14:11:53.984] [main/INFO] [terrablender/]: Registered region aether:the_aether to index 0 for type THE_AETHER
+[26Apr2026 14:11:53.984] [main/INFO] [terrablender/]: Registered region deep_aether:deep_aether to index 1 for type THE_AETHER
+[26Apr2026 14:11:53.984] [main/INFO] [terrablender/]: Registered region deep_aether:rare to index 2 for type THE_AETHER
+[26Apr2026 14:11:54.197] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 9 column 1 path $
+	at com.google.gson.Gson.fromJson(Gson.java:1226) ~[gson-2.10.jar%2374!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1124) ~[gson-2.10.jar%2374!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1034) ~[gson-2.10.jar%2374!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:969) ~[gson-2.10.jar%2374!/:?]
+	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:183) ~[core-47.2.2.jar%23280!/:47.2]
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
+	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:114) ~[core-47.2.2.jar%23280!/:47.2]
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 9 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:393) ~[gson-2.10.jar%2374!/:?]
+	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:182) ~[gson-2.10.jar%2374!/:?]
+	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:144) ~[gson-2.10.jar%2374!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1214) ~[gson-2.10.jar%2374!/:?]
+	... 6 more
+[26Apr2026 14:11:54.198] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [aether] Starting version check at https://github.com/The-Aether-Team/The-Aether/raw/1.20.1-develop/update.json
+[26Apr2026 14:11:54.328] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [aether] Found status: UP_TO_DATE Current: 1.20.1-1.5.2-neoforge Target: null
+[26Apr2026 14:11:54.328] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [guardvillagers] Starting version check at https://raw.githubusercontent.com/seymourimadeit/guardvillagers/master/update.json
+[26Apr2026 14:11:54.352] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [guardvillagers] Found status: BETA Current: 1.20.1-1.6.17 Target: 1.20-1.6.5
+[26Apr2026 14:11:54.352] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [minetraps] Starting version check at https://raw.githubusercontent.com/XxRexRaptorxX/Update-Checker/main/MineTraps.json
+[26Apr2026 14:11:54.375] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [minetraps] Found status: UP_TO_DATE Current: 2.3.0a Target: null
+[26Apr2026 14:11:54.376] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [twilightforest] Starting version check at https://gh.tamaized.com/TeamTwilight/twilightforest/update.json
+[26Apr2026 14:11:54.456] [modloading-worker-0/INFO] [de.mennomax.astikorcarts.AstikorCarts/]: Automatic pull animal configuration:
+pull_animals = [
+    "minecraft:camel",
+    "minecraft:donkey",
+    "minecraft:horse",
+    "minecraft:mule",
+    "minecraft:skeleton_horse",
+    "minecraft:zombie_horse",
+    "minecraft:player",
+    "aether:phyg",
+    "aether:flying_cow",
+    "aether:moa"
+  ]
+[26Apr2026 14:11:54.572] [Thread-0/INFO] [ModernFix/]: Please use /mfsrc to reload any changed mod config files
+[26Apr2026 14:11:54.719] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [twilightforest] Found status: AHEAD Current: 4.3.2508 Target: null
+[26Apr2026 14:11:54.719] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [cumulus_menus] Starting version check at https://github.com/The-Aether-Team/Cumulus/raw/1.20.1-develop/update.json
+[26Apr2026 14:11:54.799] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [cumulus_menus] Found status: UP_TO_DATE Current: 1.20.1-1.0.1-neoforge Target: null
+[26Apr2026 14:11:54.799] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [cfm] Starting version check at https://mrcrayfish.com/modupdatejson?id=cfm
+[26Apr2026 14:11:55.088] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[26Apr2026 14:11:55.088] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.Gson.fromJson(Gson.java:1226) ~[gson-2.10.jar%2374!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1124) ~[gson-2.10.jar%2374!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1034) ~[gson-2.10.jar%2374!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:969) ~[gson-2.10.jar%2374!/:?]
+	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:183) ~[core-47.2.2.jar%23280!/:47.2]
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
+	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:114) ~[core-47.2.2.jar%23280!/:47.2]
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:393) ~[gson-2.10.jar%2374!/:?]
+	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:182) ~[gson-2.10.jar%2374!/:?]
+	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:144) ~[gson-2.10.jar%2374!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1214) ~[gson-2.10.jar%2374!/:?]
+	... 6 more
+[26Apr2026 14:11:55.088] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [deep_aether] Starting version check at https://github.com/RazorDevs/Deep-Aether/raw/1.20.1-1.1/update.json
+[26Apr2026 14:11:55.145] [main/WARN] [net.minecraftforge.common.ForgeHooks/WP]: The following mods have version differences that were not resolved:
+collective (version 8.13 -> 8.20)
+cupboard (version 1.20.1-3.5 -> 1.20.1-3.7)
+disenchanting_table (version 3.0.1 -> MISSING)
+easydisenchanting (version 1.0.1 -> MISSING)
+farmersdelight (version 1.20.1-1.2.11 -> 1.20.1-1.2.11a)
+jei (version 15.20.0.129 -> 15.20.0.130)
+monolib (version 2.1.0 -> 1.1.0)
+moonlight (version 1.20-2.16.28 -> 1.20-2.16.30)
+sophisticatedbackpacks (version 3.24.31.1628 -> 3.24.35.1675)
+sophisticatedcore (version 1.3.15.1606 -> 1.3.26.1759)
+structureessentials (version 1.20.1-4.8 -> 1.20.1-5.0)
+Things may not work well.
+[26Apr2026 14:11:55.206] [main/ERROR] [net.minecraftforge.registries.GameData/REGISTRIES]: Unidentified mapping from registry minecraft:block
+	disenchanting_table:disenchanting_table: 2456
+	monolib:debug_block: 2455
+
+[26Apr2026 14:11:55.207] [main/ERROR] [net.minecraftforge.registries.GameData/REGISTRIES]: Unidentified mapping from registry minecraft:item
+	disenchanting_table:disenchanting_table: 3692
+	monolib:debug_block: 3691
+	monolib:debug_item: 3354
+
+[26Apr2026 14:11:55.208] [main/WARN] [net.minecraftforge.registries.GameData/REGISTRIES]: Fancy Mod Loader detected missing registry entries.
+
+There are 5 missing entries in this save.
+If you continue the missing entries will get removed.
+A world backup will be automatically created in your saves directory.
+
+
+[26Apr2026 14:11:55.208] [main/WARN] [net.minecraftforge.registries.GameData/REGISTRIES]: Missing minecraft:item:
+    disenchanting_table:disenchanting_table
+    monolib:debug_block
+    monolib:debug_item
+
+Missing minecraft:block:
+    disenchanting_table:disenchanting_table
+    monolib:debug_block
+
+
+[26Apr2026 14:11:55.208] [main/ERROR] [net.minecraftforge.registries.GameData/REGISTRIES]: There are unidentified mappings in this world - we are going to attempt to process anyway
+[26Apr2026 14:11:55.211] [main/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: sophisticatedcore:xp_bucket Expected: 1687 Got: 4633
+[26Apr2026 14:11:55.251] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [deep_aether] Found status: UP_TO_DATE Current: 1.20.1-1.1.7 Target: null
+[26Apr2026 14:11:55.251] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [mr_craftable_horseitems] Starting version check at https://api.modrinth.com/updates/OIgLDAYA/forge_updates.json
+[26Apr2026 14:11:55.331] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/home/lexen/Minecraft/Harmony-Cove-Server/libraries/net/minecraft/server/1.20.1-20230612.114412/server-1.20.1-20230612.114412-srg.jar%23279!/assets/.mcassetsroot' uses unexpected schema
+[26Apr2026 14:11:55.332] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/home/lexen/Minecraft/Harmony-Cove-Server/libraries/net/minecraft/server/1.20.1-20230612.114412/server-1.20.1-20230612.114412-srg.jar%23279!/data/.mcassetsroot' uses unexpected schema
+[26Apr2026 14:11:55.446] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [mr_craftable_horseitems] Found status: OUTDATED Current: 1 Target: 1+mod
+[26Apr2026 14:11:55.446] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [configured] Starting version check at https://mrcrayfish.com/modupdatejson?id=configured
+[26Apr2026 14:11:55.447] [main/INFO] [com.simibubi.create.Create/]: Created 344 recipes which will be injected into the game
+[26Apr2026 14:11:55.452] [main/INFO] [com.simibubi.create.Create/]: Created 4 tags which will be injected into the game
+[26Apr2026 14:11:55.493] [main/WARN] [net.minecraft.server.MinecraftServer/]: Missing data pack mod:easydisenchanting
+[26Apr2026 14:11:55.493] [main/WARN] [net.minecraft.server.MinecraftServer/]: Missing data pack mod:disenchanting_table
+[26Apr2026 14:11:55.514] [main/INFO] [Moonlight/]: Starting runtime resource generation for pack type SERVER_DATA with generators from mods [supplementaries]: [net.mehvahdjukaar.supplementaries.dynamicpack.ServerDynamicResourcesGenerator@2b4fba18]
+[26Apr2026 14:11:55.514] [main/INFO] [Moonlight/]: Generating runtime assets for pack Supplementaries Generated Pack (supplementaries)
+[26Apr2026 14:11:55.521] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.Gson.fromJson(Gson.java:1226) ~[gson-2.10.jar%2374!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1124) ~[gson-2.10.jar%2374!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1034) ~[gson-2.10.jar%2374!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:969) ~[gson-2.10.jar%2374!/:?]
+	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:183) ~[core-47.2.2.jar%23280!/:47.2]
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
+	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:114) ~[core-47.2.2.jar%23280!/:47.2]
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:393) ~[gson-2.10.jar%2374!/:?]
+	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:182) ~[gson-2.10.jar%2374!/:?]
+	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:144) ~[gson-2.10.jar%2374!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1214) ~[gson-2.10.jar%2374!/:?]
+	... 6 more
+[26Apr2026 14:11:55.522] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [moonlight] Starting version check at https://api.modrinth.com/updates/moonlight/forge_updates.json
+[26Apr2026 14:11:55.569] [main/INFO] [Supplementaries/]: Generated runtime SERVER_DATA for pack Supplementaries Generated Pack (supplementaries) in: 55 ms (multithreaded)
+[26Apr2026 14:11:55.570] [main/INFO] [Moonlight/]: Finished runtime resources generation for 1 packs in a total of 55 ms
+[26Apr2026 14:11:55.635] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [moonlight] Found status: OUTDATED Current: 1.20-2.16.30 Target: 1.20-2.16.30-forge
+[26Apr2026 14:11:55.635] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [supplementaries] Starting version check at https://raw.githubusercontent.com/MehVahdJukaar/Supplementaries/1.20/forge/update.json
+[26Apr2026 14:11:55.651] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was NUMBER at line 1 column 4 path $
+	at com.google.gson.Gson.fromJson(Gson.java:1226) ~[gson-2.10.jar%2374!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1124) ~[gson-2.10.jar%2374!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1034) ~[gson-2.10.jar%2374!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:969) ~[gson-2.10.jar%2374!/:?]
+	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:183) ~[core-47.2.2.jar%23280!/:47.2]
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
+	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:114) ~[core-47.2.2.jar%23280!/:47.2]
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was NUMBER at line 1 column 4 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:393) ~[gson-2.10.jar%2374!/:?]
+	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:182) ~[gson-2.10.jar%2374!/:?]
+	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:144) ~[gson-2.10.jar%2374!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1214) ~[gson-2.10.jar%2374!/:?]
+	... 6 more
+[26Apr2026 14:11:55.651] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [gravestone] Starting version check at https://maxhenkel.de/update/gravestone.json
+[26Apr2026 14:11:56.570] [main/INFO] [Spartan Weaponry/]: Finished registering commands for Spartan Weaponry!
+[26Apr2026 14:11:57.002] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [gravestone] Found status: UP_TO_DATE Current: 1.20.1-1.0.10 Target: null
+[26Apr2026 14:11:57.004] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [canary] Starting version check at https://github.com/AbdElAziz333/Canary/raw/mc1.19.2/dev/updates.json
+[26Apr2026 14:11:57.072] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 9 column 1 path $
+	at com.google.gson.Gson.fromJson(Gson.java:1226) ~[gson-2.10.jar%2374!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1124) ~[gson-2.10.jar%2374!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1034) ~[gson-2.10.jar%2374!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:969) ~[gson-2.10.jar%2374!/:?]
+	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:183) ~[core-47.2.2.jar%23280!/:47.2]
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
+	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:114) ~[core-47.2.2.jar%23280!/:47.2]
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 9 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:393) ~[gson-2.10.jar%2374!/:?]
+	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:182) ~[gson-2.10.jar%2374!/:?]
+	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:144) ~[gson-2.10.jar%2374!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1214) ~[gson-2.10.jar%2374!/:?]
+	... 6 more
+[26Apr2026 14:11:57.107] [Worker-Main-18/INFO] [Spartan Weaponry/]: Adding Diamond Weapons to the End City Treasure Loot Table!
+[26Apr2026 14:11:57.138] [Worker-Main-18/INFO] [Spartan Weaponry/]: Adding Longbow and Heavy Crossbow related loot to the Village Fletcher Loot Table!
+[26Apr2026 14:11:57.191] [Worker-Main-18/INFO] [Spartan Weaponry/]: Adding Iron Weapons to the Village Weaponsmith Loot Table!
+[26Apr2026 14:11:57.220] [main/WARN] [net.minecraft.world.level.storage.loot.LootDataManager/]: Datapack tried to redefine minecraft:empty loot table, ignoring
+[26Apr2026 14:11:57.320] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe supplementaries:inspirations/blackboard_clear as it's serializer returned null
+[26Apr2026 14:11:57.330] [main/INFO] [Spartan Weaponry/]: Empty result tag:"forge:nuggets/steel" Skipping...
+[26Apr2026 14:11:57.330] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe spartanweaponry:steel_nugget_from_blasting_steel_weapons as it's serializer returned null
+[26Apr2026 14:11:57.332] [main/INFO] [Spartan Weaponry/]: Empty result tag:"forge:nuggets/invar" Skipping...
+[26Apr2026 14:11:57.332] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe spartanweaponry:invar_nugget_from_smelting_invar_weapons as it's serializer returned null
+[26Apr2026 14:11:57.334] [main/INFO] [Spartan Weaponry/]: Empty result tag:"forge:nuggets/constantan" Skipping...
+[26Apr2026 14:11:57.334] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe spartanweaponry:constantan_nugget_from_smelting_constantan_weapons as it's serializer returned null
+[26Apr2026 14:11:57.348] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe twilightforest:jeed/frosted as it's serializer returned null
+[26Apr2026 14:11:57.349] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe supplementaries:inspirations/flag_dye as it's serializer returned null
+[26Apr2026 14:11:57.352] [main/INFO] [Spartan Weaponry/]: Empty result tag:"forge:nuggets/steel" Skipping...
+[26Apr2026 14:11:57.352] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe spartanweaponry:steel_nugget_from_smelting_steel_weapons as it's serializer returned null
+[26Apr2026 14:11:57.352] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe twilightforest:jeed/hunger as it's serializer returned null
+[26Apr2026 14:11:57.358] [main/INFO] [Spartan Weaponry/]: Empty result tag:"forge:nuggets/constantan" Skipping...
+[26Apr2026 14:11:57.358] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe spartanweaponry:constantan_nugget_from_blasting_constantan_weapons as it's serializer returned null
+[26Apr2026 14:11:57.363] [main/INFO] [Spartan Weaponry/]: Empty result tag:"forge:nuggets/lead" Skipping...
+[26Apr2026 14:11:57.363] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe spartanweaponry:lead_nugget_from_blasting_lead_weapons as it's serializer returned null
+[26Apr2026 14:11:57.365] [main/INFO] [Spartan Weaponry/]: Empty result tag:"forge:nuggets/tin" Skipping...
+[26Apr2026 14:11:57.365] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe spartanweaponry:tin_nugget_from_smelting_tin_weapons as it's serializer returned null
+[26Apr2026 14:11:57.375] [main/INFO] [Spartan Weaponry/]: Empty result tag:"forge:nuggets/invar" Skipping...
+[26Apr2026 14:11:57.375] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe spartanweaponry:invar_nugget_from_blasting_invar_weapons as it's serializer returned null
+[26Apr2026 14:11:57.378] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe twilightforest:jeed/blindness as it's serializer returned null
+[26Apr2026 14:11:57.383] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe deep_aether:stratus_redux_recipe as it's serializer returned null
+[26Apr2026 14:11:57.383] [main/INFO] [Spartan Weaponry/]: Empty result tag:"forge:nuggets/aluminum" Skipping...
+[26Apr2026 14:11:57.384] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe spartanweaponry:aluminum_nugget_from_smelting_aluminum_weapons as it's serializer returned null
+[26Apr2026 14:11:57.385] [main/INFO] [Spartan Weaponry/]: Empty result tag:"forge:nuggets/electrum" Skipping...
+[26Apr2026 14:11:57.385] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe spartanweaponry:electrum_nugget_from_blasting_electrum_weapons as it's serializer returned null
+[26Apr2026 14:11:57.386] [main/INFO] [Spartan Weaponry/]: Empty result tag:"forge:nuggets/platinum" Skipping...
+[26Apr2026 14:11:57.386] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe spartanweaponry:platinum_nugget_from_smelting_platinum_weapons as it's serializer returned null
+[26Apr2026 14:11:57.387] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe twilightforest:jeed/poison as it's serializer returned null
+[26Apr2026 14:11:57.388] [main/INFO] [Spartan Weaponry/]: Empty result tag:"forge:nuggets/aluminum" Skipping...
+[26Apr2026 14:11:57.388] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe spartanweaponry:aluminum_nugget_from_blasting_aluminum_weapons as it's serializer returned null
+[26Apr2026 14:11:57.394] [main/INFO] [Spartan Weaponry/]: Empty result tag:"forge:nuggets/bronze" Skipping...
+[26Apr2026 14:11:57.394] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe spartanweaponry:bronze_nugget_from_blasting_bronze_weapons as it's serializer returned null
+[26Apr2026 14:11:57.406] [main/INFO] [Spartan Weaponry/]: Empty result tag:"forge:nuggets/nickel" Skipping...
+[26Apr2026 14:11:57.406] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe spartanweaponry:nickel_nugget_from_smelting_nickel_weapons as it's serializer returned null
+[26Apr2026 14:11:57.406] [main/INFO] [Spartan Weaponry/]: Empty result tag:"forge:nuggets/electrum" Skipping...
+[26Apr2026 14:11:57.406] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe spartanweaponry:electrum_nugget_from_smelting_electrum_weapons as it's serializer returned null
+[26Apr2026 14:11:57.412] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe deep_aether:metal_mixture_recipe as it's serializer returned null
+[26Apr2026 14:11:57.412] [main/INFO] [Spartan Weaponry/]: Empty result tag:"forge:nuggets/lead" Skipping...
+[26Apr2026 14:11:57.412] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe spartanweaponry:lead_nugget_from_smelting_lead_weapons as it's serializer returned null
+[26Apr2026 14:11:57.416] [main/INFO] [Spartan Weaponry/]: Empty result tag:"forge:nuggets/silver" Skipping...
+[26Apr2026 14:11:57.416] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe spartanweaponry:silver_nugget_from_smelting_silver_weapons as it's serializer returned null
+[26Apr2026 14:11:57.420] [main/INFO] [Spartan Weaponry/]: Empty result tag:"forge:nuggets/platinum" Skipping...
+[26Apr2026 14:11:57.420] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe spartanweaponry:platinum_nugget_from_blasting_platinum_weapons as it's serializer returned null
+[26Apr2026 14:11:57.422] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe twilightforest:jeed/resistance as it's serializer returned null
+[26Apr2026 14:11:57.426] [main/INFO] [Spartan Weaponry/]: Empty result tag:"forge:nuggets/bronze" Skipping...
+[26Apr2026 14:11:57.426] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe spartanweaponry:bronze_nugget_from_smelting_bronze_weapons as it's serializer returned null
+[26Apr2026 14:11:57.429] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe supplementaries:inspirations/flag_clear as it's serializer returned null
+[26Apr2026 14:11:57.435] [main/INFO] [Spartan Weaponry/]: Empty result tag:"forge:nuggets/nickel" Skipping...
+[26Apr2026 14:11:57.435] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe spartanweaponry:nickel_nugget_from_blasting_nickel_weapons as it's serializer returned null
+[26Apr2026 14:11:57.438] [main/INFO] [Spartan Weaponry/]: Empty result tag:"forge:nuggets/tin" Skipping...
+[26Apr2026 14:11:57.438] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe spartanweaponry:tin_nugget_from_blasting_tin_weapons as it's serializer returned null
+[26Apr2026 14:11:57.438] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe twilightforest:jeed/regeneration as it's serializer returned null
+[26Apr2026 14:11:57.439] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe twilightforest:jeed/slowness as it's serializer returned null
+[26Apr2026 14:11:57.441] [main/INFO] [Spartan Weaponry/]: Empty result tag:"forge:nuggets/silver" Skipping...
+[26Apr2026 14:11:57.441] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe spartanweaponry:silver_nugget_from_blasting_silver_weapons as it's serializer returned null
+[26Apr2026 14:11:57.442] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Skipping loading recipe twilightforest:jeed/fire_resistance as it's serializer returned null
+[26Apr2026 14:11:57.445] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 43 recipes
+[26Apr2026 14:11:57.528] [main/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 6340 advancements
+[26Apr2026 14:11:57.532] [main/INFO] [placebo/]: Registered 0 additional recipes.
+[26Apr2026 14:11:57.536] [main/INFO] [ewewukek.musketmod.MusketMod/]: Configuration has been loaded
+[26Apr2026 14:11:57.543] [main/INFO] [top.theillusivec4.curios.Curios/]: Loaded 16 curio slots
+[26Apr2026 14:11:57.550] [main/INFO] [top.theillusivec4.curios.Curios/]: Loaded 9 curio entities
+[26Apr2026 14:11:57.550] [main/INFO] [com.dannyandson.tinyredstone.TinyRedstone/]: Beginning loading of data for data loader: tiny_block_overrides
+[26Apr2026 14:11:57.551] [main/INFO] [com.dannyandson.tinyredstone.TinyRedstone/]: Data loader for tiny_block_overrides loaded 1 jsons
+[26Apr2026 14:11:57.552] [main/INFO] [twilightforest/]: Loaded 9 Stalactite configs!
+[26Apr2026 14:11:57.596] [main/INFO] [Supplementaries/]: Loaded 27 flute songs
+[26Apr2026 14:11:57.604] [main/INFO] [placebo/]: Registered 0 gear_sets.
+[26Apr2026 14:11:57.663] [main/INFO] [Spartan Weaponry/]: Finished initialising Weapon Traits & Attributes! Took 4.913849ms
+[26Apr2026 14:11:57.681] [main/INFO] [Moonlight/]: Applied 18 data villager trades
+[26Apr2026 14:11:57.723] [main/INFO] [Supplementaries/]: Finished additional setup in 0 ms
+[26Apr2026 14:11:57.992] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.20.1
+[26Apr2026 14:11:57.992] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
+[26Apr2026 14:11:57.992] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
+[26Apr2026 14:11:57.992] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[26Apr2026 14:11:58.049] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on *:25565
+[26Apr2026 14:11:58.063] [Server thread/INFO] [net.minecraft.server.network.ServerConnectionListener/]: Using epoll channel type
+[26Apr2026 14:11:58.209] [Server thread/INFO] [spark/]: Starting background profiler...
+[26Apr2026 14:11:58.401] [Server thread/INFO] [Framework/]: Loading server configs...
+[26Apr2026 14:11:58.416] [Server thread/INFO] [terrablender/]: Initialized TerraBlender biomes for level stem aether:the_aether
+[26Apr2026 14:11:58.417] [Server thread/INFO] [terrablender/]: Initialized TerraBlender biomes for level stem minecraft:the_nether
+[26Apr2026 14:11:58.468] [Server thread/INFO] [terrablender/]: Initialized TerraBlender biomes for level stem minecraft:overworld
+[26Apr2026 14:11:58.468] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world"
+[26Apr2026 14:11:58.495] [Server thread/WARN] [mixin/]: Mixin apply failed betterchunkloading.mixins.json:ServerChunkCacheMixin -> net.minecraft.server.level.ServerChunkCache: org.spongepowered.asm.mixin.injection.throwables.InvalidInjectionException @At("INVOKE") on net/minecraft/server/level/ServerChunkCache::prioWaiting with priority 200 cannot inject into net/minecraft/server/level/ServerChunkCache::m_7587_(IILnet/minecraft/world/level/chunk/ChunkStatus;Z)Lnet/minecraft/world/level/chunk/ChunkAccess; merged by com.abdelaziz.canary.mixin.world.chunk_access.ServerChunkCacheMixin with priority 1000 [ -> redirect$bej000$prioWaiting(Lnet/minecraft/server/level/ServerChunkCache;IILnet/minecraft/world/level/chunk/ChunkStatus;Z)Ljava/util/concurrent/CompletableFuture; -> Prepare]
+org.spongepowered.asm.mixin.injection.throwables.InvalidInjectionException: @At("INVOKE") on net/minecraft/server/level/ServerChunkCache::prioWaiting with priority 200 cannot inject into net/minecraft/server/level/ServerChunkCache::m_7587_(IILnet/minecraft/world/level/chunk/ChunkStatus;Z)Lnet/minecraft/world/level/chunk/ChunkAccess; merged by com.abdelaziz.canary.mixin.world.chunk_access.ServerChunkCacheMixin with priority 1000 [ -> redirect$bej000$prioWaiting(Lnet/minecraft/server/level/ServerChunkCache;IILnet/minecraft/world/level/chunk/ChunkStatus;Z)Ljava/util/concurrent/CompletableFuture; -> Prepare]
+	at org.spongepowered.asm.mixin.injection.code.Injector.findTargetNodes(Injector.java:305) ~[mixin-0.8.5.jar%2368!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.injection.code.Injector.find(Injector.java:240) ~[mixin-0.8.5.jar%2368!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.injection.struct.InjectionInfo.prepare(InjectionInfo.java:421) ~[mixin-0.8.5.jar%2368!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.MixinTargetContext.prepareInjections(MixinTargetContext.java:1319) ~[mixin-0.8.5.jar%2368!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.prepareInjections(MixinApplicatorStandard.java:1042) ~[mixin-0.8.5.jar%2368!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyMixin(MixinApplicatorStandard.java:393) ~[mixin-0.8.5.jar%2368!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:325) ~[mixin-0.8.5.jar%2368!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.apply(TargetClassContext.java:383) ~[mixin-0.8.5.jar%2368!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:365) ~[mixin-0.8.5.jar%2368!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:363) ~[mixin-0.8.5.jar%2368!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:250) ~[mixin-0.8.5.jar%2368!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.service.modlauncher.MixinTransformationHandler.processClass(MixinTransformationHandler.java:131) ~[mixin-0.8.5.jar%2368!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at org.spongepowered.asm.launch.MixinLaunchPluginLegacy.processClass(MixinLaunchPluginLegacy.java:131) ~[mixin-0.8.5.jar%2368!/:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4]
+	at cpw.mods.modlauncher.serviceapi.ILaunchPluginService.processClassWithFlags(ILaunchPluginService.java:156) ~[modlauncher-10.0.9.jar%2358!/:10.0.9+10.0.9+main.dcd20f30]
+	at cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:88) ~[modlauncher-10.0.9.jar%2358!/:?]
+	at cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120) ~[modlauncher-10.0.9.jar%2358!/:?]
+	at cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:50) ~[modlauncher-10.0.9.jar%2358!/:?]
+	at cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:113) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.lambda$findClass$15(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:229) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:135) ~[securejarhandler-2.1.10.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
+	at net.minecraft.server.MinecraftServer.m_129815_(MinecraftServer.java:337) ~[server-1.20.1-20230612.114412-srg.jar%23279!/:?]
+	at net.minecraft.server.MinecraftServer.m_130006_(MinecraftServer.java:308) ~[server-1.20.1-20230612.114412-srg.jar%23279!/:?]
+	at net.minecraft.server.dedicated.DedicatedServer.m_7038_(DedicatedServer.java:164) ~[server-1.20.1-20230612.114412-srg.jar%23279!/:?]
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:634) ~[server-1.20.1-20230612.114412-srg.jar%23279!/:?]
+	at net.minecraft.server.MinecraftServer.m_206580_(MinecraftServer.java:251) ~[server-1.20.1-20230612.114412-srg.jar%23279!/:?]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[26Apr2026 14:11:58.678] [Server thread/INFO] [com.cupboard.Cupboard/]: Loaded config for: betterchunkloading.json
+[26Apr2026 14:11:58.887] [Server thread/WARN] [com.structureessentials.StructureEssentials/]: Non-unique structure_set salt:0 potentially creating overlapping structures detected. Structure sets: [twilightforest:dark_tower, minecraft:mineshafts, twilightforest:final_castle, twilightforest:large_hollow_hill, twilightforest:mushroom_tower, twilightforest:hedge_maze, minecraft:buried_treasures, twilightforest:aurora_palace, twilightforest:lich_tower, twilightforest:labyrinth, twilightforest:naga_courtyard, twilightforest:yeti_cave, twilightforest:quest_grove, twilightforest:small_hollow_hill, minecraft:strongholds, twilightforest:troll_cave, twilightforest:medium_hollow_hill, twilightforest:knight_stronghold, twilightforest:hydra_lair]
+[26Apr2026 14:11:58.887] [Server thread/WARN] [com.structureessentials.StructureEssentials/]: Non-unique structure_set salt:100922847 potentially creating overlapping structures detected. Structure sets: [mns:medium_house, mns:medium_house_2]
+[26Apr2026 14:11:58.887] [Server thread/WARN] [com.structureessentials.StructureEssentials/]: Non-unique structure_set salt:10387313 potentially creating overlapping structures detected. Structure sets: [minecraft:ocean_monuments, minecraft:end_cities]
+[26Apr2026 14:11:58.888] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[26Apr2026 14:11:58.891] [Server thread/WARN] [mixin/]: Method overwrite conflict for removeIf in modernfix-common.mixins.json:bugfix.paper_chunk_patches.SortedArraySetMixin, previously written by com.abdelaziz.canary.mixin.world.chunk_tickets.SortedArraySetMixin. Skipping method.
+[26Apr2026 14:11:59.349] [Server thread/WARN] [mixin/]: @Redirect conflict. Skipping redirector.mixins.json:net.minecraft.world.level.block.state.CacheMixin->@Redirect::redirectSupportTypes()[Lnet/minecraft/world/level/block/SupportType; with priority 10, already redirected by modernfix-common.mixins.json:perf.cache_blockstate_cache_arrays.AbstractBlockStateCacheMixin->@Redirect::getVoxelShapeValues()[Lnet/minecraft/world/level/block/SupportType; with priority 1000
+[26Apr2026 14:11:59.518] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[26Apr2026 14:11:59.518] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[26Apr2026 14:11:59.869] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 982 ms
+[26Apr2026 14:11:59.869] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (1.742s)! For help, type "help"
+[26Apr2026 14:11:59.902] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[26Apr2026 14:11:59.904] [Server thread/INFO] [com.cupboard.Cupboard/]: Loaded config for: smoothchunk.json
+[26Apr2026 14:12:00.004] [Server thread/WARN] [ModernFix/]: Dedicated server took 18.333 seconds to load
+[26Apr2026 14:12:06.008] [User Authenticator #1/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: UUID of player Sinivis is 05d51eab-a00e-4a0b-b304-69d48b775f1b
+[26Apr2026 14:12:08.400] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Sinivis[/192.168.40.150:48402] logged in with entity id 109 at (-1499.5, 121.0, 148.5)
+[26Apr2026 14:12:08.470] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Sinivis joined the game
+[26Apr2026 14:12:10.026] [Netty Epoll Server IO #3/ERROR] [dev.architectury.networking.forge.NetworkManagerImpl/]: Unknown message ID: quickskin:texture_chunk
+[26Apr2026 14:12:10.027] [Netty Epoll Server IO #3/ERROR] [dev.architectury.networking.forge.NetworkManagerImpl/]: Unknown message ID: quickskin:update_appearance
+[26Apr2026 14:12:11.282] [Server thread/INFO] [com.simibubi.create.Create/]: RecipeTrie of depth 3 with 209 nodes built with 237 variants, 202 ingredients, and 209 recipes
+[26Apr2026 14:12:27.743] [Server thread/INFO] [com.simibubi.create.Create/]: RecipeTrie of depth 7 with 1209 nodes built with 2008 variants, 675 ingredients, and 1971 recipes
+[26Apr2026 14:14:29.672] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Sinivis lost connection: Disconnected
+[26Apr2026 14:14:29.673] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Sinivis left the game
+[26Apr2026 14:14:36.114] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping the server
+[26Apr2026 14:14:36.174] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[26Apr2026 14:14:36.175] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[26Apr2026 14:14:36.176] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[26Apr2026 14:14:36.491] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[26Apr2026 14:14:40.034] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/twilightforest:twilight_forest
+[26Apr2026 14:14:40.035] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/aether:the_aether
+[26Apr2026 14:14:40.037] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[26Apr2026 14:14:40.038] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[26Apr2026 14:14:40.065] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[26Apr2026 14:14:40.065] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (twilight_forest): All chunks are saved
+[26Apr2026 14:14:40.065] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (the_aether): All chunks are saved
+[26Apr2026 14:14:40.065] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[26Apr2026 14:14:40.065] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[26Apr2026 14:14:40.065] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[26Apr2026 14:14:40.124] [Server thread/INFO] [Framework/]: Unloading server configs...
+[26Apr2026 14:14:40.125] [Server thread/INFO] [Framework/]: Finished unloading server configs

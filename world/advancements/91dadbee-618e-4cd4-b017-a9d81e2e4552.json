@@ -9283,27 +9283,27 @@
     },
     "done": true
   },
-  "twilightforest:recipes/misc/magic_map_focus": {
-    "criteria": {
-      "has_berries": "2026-03-28 19:12:42 -0600"
-    },
-    "done": true
-  },
-  "railways:recipes/misc/crafting/paint_brush": {
-    "criteria": {
-      "has_item": "2026-03-28 19:33:21 -0600"
-    },
-    "done": true
-  },
   "railways:root": {
     "criteria": {
       "0": "2026-03-28 19:01:18 -0600"
     },
     "done": true
   },
+  "twilightforest:recipes/misc/magic_map_focus": {
+    "criteria": {
+      "has_berries": "2026-03-28 19:12:42 -0600"
+    },
+    "done": true
+  },
   "twilightforest:recipes/decorations/berry_torch": {
     "criteria": {
       "has_item": "2026-03-28 19:12:42 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/paint_brush": {
+    "criteria": {
+      "has_item": "2026-03-28 19:33:21 -0600"
     },
     "done": true
   },
