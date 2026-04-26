@@ -27,6 +27,7 @@
       "minecraft:snowy_taiga": "2024-06-16 23:04:29 -0600",
       "minecraft:dripstone_caves": "2024-06-17 00:55:48 -0600",
       "minecraft:grove": "2024-06-18 20:01:31 -0600",
+      "minecraft:swamp": "2026-04-24 10:37:06 -0600",
       "minecraft:cold_ocean": "2024-06-18 21:29:38 -0600",
       "minecraft:forest": "2024-06-17 23:51:08 -0600",
       "minecraft:lush_caves": "2024-06-16 23:34:35 -0600",
@@ -35,6 +36,7 @@
       "minecraft:frozen_ocean": "2024-06-20 22:39:55 -0600",
       "minecraft:desert": "2025-09-21 21:48:00 -0600",
       "minecraft:deep_frozen_ocean": "2024-07-11 06:00:45 -0600",
+      "minecraft:windswept_forest": "2026-04-24 10:37:02 -0600",
       "minecraft:ocean": "2024-06-18 21:24:43 -0600",
       "minecraft:jungle": "2025-09-20 09:34:12 -0600",
       "minecraft:old_growth_spruce_taiga": "2024-06-21 00:06:50 -0600",
@@ -7143,6 +7145,7 @@
   "spartanweaponry:collect_heads": {
     "criteria": {
       "enderman_head": "2026-04-09 21:20:12 -0600",
+      "illager_head": "2026-04-23 01:21:41 -0600",
       "spider_head": "2024-06-23 01:12:31 -0600"
     },
     "done": false
@@ -12917,6 +12920,78 @@
   "aether:recipes/combat/iron_chestplate_repairing": {
     "criteria": {
       "has_iron_chestplate": "2026-04-12 04:00:18 -0600"
+    },
+    "done": true
+  },
+  "minecraft:adventure/whos_the_pillager_now": {
+    "criteria": {
+      "kill_pillager": "2026-04-23 01:21:09 -0600"
+    },
+    "done": true
+  },
+  "globalxp:recipes/misc/xp_block": {
+    "criteria": {
+      "has_emerald": "2026-04-23 01:21:50 -0600"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/transportation/mangrove_chest_boat": {
+    "criteria": {
+      "has_boat": "2026-04-24 10:44:23 -0600"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/transportation/transformation_chest_boat": {
+    "criteria": {
+      "has_boat": "2026-04-24 10:44:23 -0600"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/transportation/sorting_chest_boat": {
+    "criteria": {
+      "has_boat": "2026-04-24 10:44:23 -0600"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/transportation/mining_chest_boat": {
+    "criteria": {
+      "has_boat": "2026-04-24 10:44:23 -0600"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/transportation/dark_chest_boat": {
+    "criteria": {
+      "has_boat": "2026-04-24 10:44:23 -0600"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/transportation/canopy_chest_boat": {
+    "criteria": {
+      "has_boat": "2026-04-24 10:44:23 -0600"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/transportation/time_chest_boat": {
+    "criteria": {
+      "has_boat": "2026-04-24 10:44:23 -0600"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/transportation/twilight_oak_chest_boat": {
+    "criteria": {
+      "has_boat": "2026-04-24 10:44:23 -0600"
+    },
+    "done": true
+  },
+  "aether:recipes/transportation/skyroot_chest_boat": {
+    "criteria": {
+      "has_boat": "2026-04-24 10:44:23 -0600"
+    },
+    "done": true
+  },
+  "aquaculture:recipes/aquaculture/tackle_box": {
+    "criteria": {
+      "has_items": "2026-04-24 11:09:53 -0600"
     },
     "done": true
   },

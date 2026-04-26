@@ -514,9 +514,11 @@
       "minecraft:pillager": "2024-06-17 23:52:49 -0600",
       "minecraft:blaze": "2024-06-20 23:45:51 -0600",
       "minecraft:skeleton": "2024-06-16 00:26:25 -0600",
+      "minecraft:elder_guardian": "2026-04-19 19:06:51 -0600",
       "minecraft:ravager": "2024-09-01 23:39:55 -0600",
       "minecraft:ghast": "2026-04-04 04:35:54 -0600",
       "minecraft:hoglin": "2024-06-20 22:56:06 -0600",
+      "minecraft:guardian": "2026-04-19 19:06:42 -0600",
       "minecraft:vindicator": "2024-06-18 00:26:52 -0600",
       "minecraft:magma_cube": "2024-06-20 23:45:41 -0600",
       "minecraft:spider": "2024-06-15 23:48:11 -0600",
@@ -836,6 +838,7 @@
       "melon_slice": "2026-03-07 14:16:48 -0700",
       "cooked_chicken": "2024-06-16 01:17:45 -0600",
       "mushroom_stew": "2026-04-10 00:45:08 -0600",
+      "cod": "2026-04-19 19:09:19 -0600",
       "cooked_salmon": "2024-06-16 01:52:35 -0600",
       "carrot": "2026-04-02 21:28:29 -0600"
     },
@@ -16996,9 +16999,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/redstone/redstone_lamp": {
+  "aether:blue_aercloud": {
     "criteria": {
-      "has_glowstone": "2026-04-14 20:21:14 -0600"
+      "blue_aercloud": "2026-04-14 20:19:09 -0600"
     },
     "done": true
   },
@@ -17014,15 +17017,21 @@
     },
     "done": true
   },
-  "deep_aether:recipes/decorations/muddy_yagroot_roots": {
+  "deep_aether:recipes/building_blocks/yagroot_wood": {
     "criteria": {
-      "has_aether_mud": "2026-04-14 20:23:26 -0600"
+      "has_log": "2026-04-14 20:20:24 -0600"
     },
     "done": true
   },
-  "aether:blue_aercloud": {
+  "minecraft:recipes/redstone/redstone_lamp": {
     "criteria": {
-      "blue_aercloud": "2026-04-14 20:19:09 -0600"
+      "has_glowstone": "2026-04-14 20:21:14 -0600"
+    },
+    "done": true
+  },
+  "deep_aether:recipes/decorations/muddy_yagroot_roots": {
+    "criteria": {
+      "has_aether_mud": "2026-04-14 20:23:26 -0600"
     },
     "done": true
   },
@@ -17032,9 +17041,309 @@
     },
     "done": true
   },
-  "deep_aether:recipes/building_blocks/yagroot_wood": {
+  "minecraft:recipes/building_blocks/prismarine_bricks": {
     "criteria": {
-      "has_log": "2026-04-14 20:20:24 -0600"
+      "has_prismarine_shard": "2026-04-19 19:06:48 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/prismarine": {
+    "criteria": {
+      "has_prismarine_shard": "2026-04-19 19:06:48 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_prismarine": {
+    "criteria": {
+      "has_prismarine_shard": "2026-04-19 19:06:48 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/sponge": {
+    "criteria": {
+      "has_wet_sponge": "2026-04-19 19:06:52 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/doors/diorite_hinged_locometal_door": {
+    "criteria": {
+      "has_item": "2026-04-19 19:07:09 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/doors/chartreuse_hinged_locometal_door": {
+    "criteria": {
+      "has_item": "2026-04-19 19:07:09 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/doors/sea_green_hinged_locometal_door": {
+    "criteria": {
+      "has_item": "2026-04-19 19:07:09 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/doors/light_gray_hinged_locometal_door": {
+    "criteria": {
+      "has_item": "2026-04-19 19:07:09 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/doors/royal_blue_hinged_locometal_door": {
+    "criteria": {
+      "has_item": "2026-04-19 19:07:09 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/doors/hinged_locometal_door": {
+    "criteria": {
+      "has_item": "2026-04-19 19:07:09 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/doors/white_hinged_locometal_door": {
+    "criteria": {
+      "has_item": "2026-04-19 19:07:09 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/doors/green_hinged_locometal_door": {
+    "criteria": {
+      "has_item": "2026-04-19 19:07:09 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/doors/granite_hinged_locometal_door": {
+    "criteria": {
+      "has_item": "2026-04-19 19:07:09 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/doors/purple_hinged_locometal_door": {
+    "criteria": {
+      "has_item": "2026-04-19 19:07:09 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/doors/limestone_hinged_locometal_door": {
+    "criteria": {
+      "has_item": "2026-04-19 19:07:09 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/doors/cyan_hinged_locometal_door": {
+    "criteria": {
+      "has_item": "2026-04-19 19:07:09 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/doors/scorchia_hinged_locometal_door": {
+    "criteria": {
+      "has_item": "2026-04-19 19:07:09 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/doors/yellow_hinged_locometal_door": {
+    "criteria": {
+      "has_item": "2026-04-19 19:07:09 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/doors/lime_hinged_locometal_door": {
+    "criteria": {
+      "has_item": "2026-04-19 19:07:09 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/doors/tuff_hinged_locometal_door": {
+    "criteria": {
+      "has_item": "2026-04-19 19:07:09 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/doors/black_hinged_locometal_door": {
+    "criteria": {
+      "has_item": "2026-04-19 19:07:09 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/doors/gray_hinged_locometal_door": {
+    "criteria": {
+      "has_item": "2026-04-19 19:07:09 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/doors/orange_hinged_locometal_door": {
+    "criteria": {
+      "has_item": "2026-04-19 19:07:09 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/doors/turquoise_hinged_locometal_door": {
+    "criteria": {
+      "has_item": "2026-04-19 19:07:09 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/doors/brown_hinged_locometal_door": {
+    "criteria": {
+      "has_item": "2026-04-19 19:07:09 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/doors/ochrum_hinged_locometal_door": {
+    "criteria": {
+      "has_item": "2026-04-19 19:07:09 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/doors/red_hinged_locometal_door": {
+    "criteria": {
+      "has_item": "2026-04-19 19:07:09 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/doors/pine_green_hinged_locometal_door": {
+    "criteria": {
+      "has_item": "2026-04-19 19:07:09 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/doors/olive_green_hinged_locometal_door": {
+    "criteria": {
+      "has_item": "2026-04-19 19:07:09 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/doors/pink_hinged_locometal_door": {
+    "criteria": {
+      "has_item": "2026-04-19 19:07:09 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/doors/vermilion_hinged_locometal_door": {
+    "criteria": {
+      "has_item": "2026-04-19 19:07:09 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/doors/maroon_hinged_locometal_door": {
+    "criteria": {
+      "has_item": "2026-04-19 19:07:09 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/doors/magenta_hinged_locometal_door": {
+    "criteria": {
+      "has_item": "2026-04-19 19:07:09 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/doors/light_blue_hinged_locometal_door": {
+    "criteria": {
+      "has_item": "2026-04-19 19:07:09 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/doors/blue_hinged_locometal_door": {
+    "criteria": {
+      "has_item": "2026-04-19 19:07:09 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/palettes/doors/dripstone_hinged_locometal_door": {
+    "criteria": {
+      "has_item": "2026-04-19 19:07:09 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_prismarine_stairs_from_dark_prismarine_stonecutting": {
+    "criteria": {
+      "has_dark_prismarine": "2026-04-19 19:30:55 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_prismarine_slab_from_dark_prismarine_stonecutting": {
+    "criteria": {
+      "has_dark_prismarine": "2026-04-19 19:30:55 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_prismarine_stairs": {
+    "criteria": {
+      "has_dark_prismarine": "2026-04-19 19:30:55 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_prismarine_slab": {
+    "criteria": {
+      "has_dark_prismarine": "2026-04-19 19:30:55 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/prismarine_brick_slab_from_prismarine_stonecutting": {
+    "criteria": {
+      "has_prismarine_brick": "2026-04-19 19:37:12 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/prismarine_brick_stairs_from_prismarine_stonecutting": {
+    "criteria": {
+      "has_prismarine_brick": "2026-04-19 19:37:12 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/prismarine_brick_slab": {
+    "criteria": {
+      "has_prismarine_bricks": "2026-04-19 19:37:12 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/prismarine_brick_stairs": {
+    "criteria": {
+      "has_prismarine_bricks": "2026-04-19 19:37:12 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/prismarine_slab": {
+    "criteria": {
+      "has_prismarine": "2026-04-19 19:37:13 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/prismarine_slab_from_prismarine_stonecutting": {
+    "criteria": {
+      "has_prismarine": "2026-04-19 19:37:13 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/prismarine_stairs_from_prismarine_stonecutting": {
+    "criteria": {
+      "has_prismarine": "2026-04-19 19:37:13 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/prismarine_wall_from_prismarine_stonecutting": {
+    "criteria": {
+      "has_prismarine": "2026-04-19 19:37:13 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/prismarine_wall": {
+    "criteria": {
+      "has_prismarine": "2026-04-19 19:37:13 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/prismarine_stairs": {
+    "criteria": {
+      "has_prismarine": "2026-04-19 19:37:13 -0600"
+    },
+    "done": true
+  },
+  "cfm:recipes/decorations/jungle_hedge": {
+    "criteria": {
+      "has_leaves": "2026-04-23 00:39:19 -0600"
     },
     "done": true
   },
