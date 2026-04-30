@@ -12970,6 +12970,7 @@
   "twilightforest:twilight_dinner": {
     "criteria": {
       "maze_wafer": "2026-04-09 23:05:12 -0600",
+      "cooked_meef": "2026-04-28 22:27:28 -0600",
       "torchberries": "2026-02-28 23:01:02 -0700",
       "experiment_115": "2026-04-23 01:20:47 -0600"
     },
@@ -14459,6 +14460,66 @@
   "twilightforest:experiment_115": {
     "criteria": {
       "eat_experiment_115": "2026-04-23 01:20:47 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/slime_ball": {
+    "criteria": {
+      "has_slime_block": "2026-04-26 23:33:46 -0600"
+    },
+    "done": true
+  },
+  "create:recipes/building_blocks/polished_cut_andesite_slab_recycling": {
+    "criteria": {
+      "has_polished_cut_andesite_slab": "2026-04-28 23:14:24 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_andesite_stairs_from_polished_andesite_stonecutting": {
+    "criteria": {
+      "has_polished_andesite": "2026-04-28 23:14:26 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_andesite_slab": {
+    "criteria": {
+      "has_polished_andesite": "2026-04-28 23:14:26 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_andesite_slab_from_polished_andesite_stonecutting": {
+    "criteria": {
+      "has_polished_andesite": "2026-04-28 23:14:26 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_andesite_stairs": {
+    "criteria": {
+      "has_polished_andesite": "2026-04-28 23:14:26 -0600"
+    },
+    "done": true
+  },
+  "create:recipes/building_blocks/cut_andesite_brick_slab_recycling": {
+    "criteria": {
+      "has_cut_andesite_brick_slab": "2026-04-28 23:14:27 -0600"
+    },
+    "done": true
+  },
+  "create:recipes/building_blocks/cut_andesite_brick_stairs": {
+    "criteria": {
+      "has_cut_andesite_bricks": "2026-04-28 23:14:29 -0600"
+    },
+    "done": true
+  },
+  "create:recipes/building_blocks/cut_andesite_brick_wall": {
+    "criteria": {
+      "has_cut_andesite_bricks": "2026-04-28 23:14:29 -0600"
+    },
+    "done": true
+  },
+  "create:recipes/building_blocks/cut_andesite_brick_slab": {
+    "criteria": {
+      "has_cut_andesite_bricks": "2026-04-28 23:14:29 -0600"
     },
     "done": true
   },
