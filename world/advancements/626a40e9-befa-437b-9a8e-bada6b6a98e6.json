@@ -8958,6 +8958,8 @@
   },
   "minecraft:husbandry/bred_all_animals": {
     "criteria": {
+      "minecraft:pig": "2026-05-03 23:02:24 -0600",
+      "minecraft:sheep": "2026-05-03 22:48:08 -0600",
       "minecraft:cow": "2025-09-27 09:27:01 -0600",
       "minecraft:chicken": "2025-09-21 22:35:24 -0600",
       "minecraft:bee": "2024-11-05 20:50:21 -0700"
@@ -13783,27 +13785,9 @@
     },
     "done": true
   },
-  "farmersdelight:main/place_cooking_pot": {
-    "criteria": {
-      "cooking_pot": "2026-05-02 14:24:10 -0600"
-    },
-    "done": true
-  },
-  "farmersdelight:main/place_skillet": {
-    "criteria": {
-      "skillet": "2026-05-02 14:24:07 -0600"
-    },
-    "done": true
-  },
   "cfm:recipes/decorations/dye_black_picket_gate": {
     "criteria": {
       "has_dye": "2026-05-02 13:58:33 -0600"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/creeper_banner_pattern": {
-    "criteria": {
-      "has_creeper_head": "2026-05-02 14:31:13 -0600"
     },
     "done": true
   },
@@ -13813,27 +13797,39 @@
     },
     "done": true
   },
-  "minecraft:recipes/decorations/black_carpet": {
-    "criteria": {
-      "has_black_wool": "2026-05-02 13:58:37 -0600"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/dye_black_carpet": {
     "criteria": {
       "has_needed_dye": "2026-05-02 13:58:33 -0600"
     },
     "done": true
   },
-  "minecraft:recipes/decorations/black_bed": {
+  "minecraft:recipes/building_blocks/dye_black_bed": {
+    "criteria": {
+      "has_needed_dye": "2026-05-02 13:58:33 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/black_candle": {
+    "criteria": {
+      "has_black_dye": "2026-05-02 13:58:33 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dye_black_wool": {
+    "criteria": {
+      "has_needed_dye": "2026-05-02 13:58:33 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/black_carpet": {
     "criteria": {
       "has_black_wool": "2026-05-02 13:58:37 -0600"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/dye_black_bed": {
+  "minecraft:recipes/decorations/black_bed": {
     "criteria": {
-      "has_needed_dye": "2026-05-02 13:58:33 -0600"
+      "has_black_wool": "2026-05-02 13:58:37 -0600"
     },
     "done": true
   },
@@ -13861,15 +13857,27 @@
     },
     "done": true
   },
-  "minecraft:recipes/decorations/black_candle": {
+  "farmersdelight:main/place_skillet": {
     "criteria": {
-      "has_black_dye": "2026-05-02 13:58:33 -0600"
+      "skillet": "2026-05-02 14:24:07 -0600"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/dye_black_wool": {
+  "farmersdelight:main/place_cooking_pot": {
     "criteria": {
-      "has_needed_dye": "2026-05-02 13:58:33 -0600"
+      "cooking_pot": "2026-05-02 14:24:10 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/creeper_banner_pattern": {
+    "criteria": {
+      "has_creeper_head": "2026-05-02 14:31:13 -0600"
+    },
+    "done": true
+  },
+  "framedblocks:recipes/building_blocks/framed_cube": {
+    "criteria": {
+      "hasPlanks": "2026-05-03 22:33:08 -0600"
     },
     "done": true
   },

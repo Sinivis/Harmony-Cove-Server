@@ -14523,5 +14523,11 @@
     },
     "done": true
   },
+  "framedblocks:recipes/building_blocks/framed_cube": {
+    "criteria": {
+      "hasPlanks": "2026-05-03 21:04:50 -0600"
+    },
+    "done": true
+  },
   "DataVersion": 3465
 }
