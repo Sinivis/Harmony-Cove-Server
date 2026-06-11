@@ -8938,12 +8938,6 @@
     },
     "done": true
   },
-  "farmersdelight:main/eat_comfort_food": {
-    "criteria": {
-      "comfort": "2024-06-23 21:08:50 -0600"
-    },
-    "done": true
-  },
   "farmersdelight:recipes/food/nether_salad": {
     "criteria": {
       "has_bowl": "2024-06-23 21:08:50 -0600"

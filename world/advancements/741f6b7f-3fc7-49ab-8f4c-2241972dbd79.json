@@ -12865,12 +12865,6 @@
     },
     "done": false
   },
-  "farmersdelight:main/eat_comfort_food": {
-    "criteria": {
-      "comfort": "2026-02-28 20:34:12 -0700"
-    },
-    "done": true
-  },
   "aether:recipes/tools/flint_and_steel_repairing": {
     "criteria": {
       "has_flint_and_steel": "2026-02-28 22:00:52 -0700"
@@ -14526,6 +14520,12 @@
   "framedblocks:recipes/building_blocks/framed_cube": {
     "criteria": {
       "hasPlanks": "2026-05-03 21:04:50 -0600"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/onion_soup": {
+    "criteria": {
+      "has_any_ingredient": "2026-05-23 00:17:51 -0600"
     },
     "done": true
   },

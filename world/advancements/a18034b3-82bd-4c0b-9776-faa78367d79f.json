@@ -2533,6 +2533,7 @@
       "minecraft:zombified_piglin": "2026-04-30 00:03:33 -0600",
       "minecraft:wither_skeleton": "2026-03-24 23:58:45 -0600",
       "minecraft:cave_spider": "2026-04-15 23:30:53 -0600",
+      "minecraft:piglin": "2026-05-25 13:11:14 -0600",
       "minecraft:enderman": "2025-09-17 21:47:00 -0600",
       "minecraft:stray": "2026-04-30 21:35:47 -0600",
       "minecraft:zombie": "2025-09-06 00:25:44 -0600",
@@ -4409,6 +4410,7 @@
   },
   "minecraft:nether/explore_nether": {
     "criteria": {
+      "minecraft:crimson_forest": "2026-05-25 13:12:15 -0600",
       "minecraft:nether_wastes": "2025-09-09 20:43:03 -0600",
       "minecraft:soul_sand_valley": "2026-03-24 23:56:56 -0600"
     },
@@ -12698,6 +12700,54 @@
   "twilightforest:recipes/decorations/wood/oak_banister": {
     "criteria": {
       "has_item": "2026-04-30 00:50:26 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_cod_from_grill_cooking": {
+    "criteria": {
+      "has_cod": "2026-05-25 13:13:47 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_cod_from_campfire_cooking": {
+    "criteria": {
+      "has_cod": "2026-05-25 13:13:47 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_cod": {
+    "criteria": {
+      "has_cod": "2026-05-25 13:13:47 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_cod_from_smoking": {
+    "criteria": {
+      "has_cod": "2026-05-25 13:13:47 -0600"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/onion_soup": {
+    "criteria": {
+      "has_any_ingredient": "2026-05-25 13:13:53 -0600"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/handcar": {
+    "criteria": {
+      "has_item": "2026-06-04 08:00:29 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/dried_kelp": {
+    "criteria": {
+      "has_dried_kelp_block": "2026-06-04 08:01:29 -0600"
+    },
+    "done": true
+  },
+  "framedblocks:recipes/building_blocks/framed_cube": {
+    "criteria": {
+      "hasPlanks": "2026-06-06 21:20:29 -0600"
     },
     "done": true
   },
